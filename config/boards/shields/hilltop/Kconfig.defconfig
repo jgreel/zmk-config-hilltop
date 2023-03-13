@@ -1,0 +1,16 @@
+if SHIELD_HILLTOP_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "Hilltop"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_HILLTOP_LEFT || SHIELD_HILLTOP_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif
