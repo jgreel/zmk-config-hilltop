@@ -9,6 +9,16 @@
 #include <dt-bindings/zmk/bt.h>
 
 / {
+	behaviors {
+        td0: tap_dance_0 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "CAPS_DANCE";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp LSHIFT>, <&kp CAPS>;
+        };
+    };
+
 	keymap {
 		compatible = "zmk,keymap";
 // | SW6  | SW5  | SW4  | SW3  | SW2  | SW1  | 5WR  |                 | 5WR  | SW1  | SW2  | SW3  | SW4  | SW5  | SW6  |
@@ -29,7 +39,7 @@
 &kp TAB		&kp Q		&kp W		&kp E		&kp R		&kp T       &kp UP											&kp UP			&kp Y		&kp U		&kp I		&kp O		&kp P		&kp EQUAL
 &kp LALT	&kp A		&kp S		&kp D		&kp F		&kp G		&kp LEFT_GUI									&kp LEFT_GUI	&kp H		&kp J		&kp K		&kp L		&kp SEMI	&kp SQT
 &kp LCTRL	&kp Z		&kp X		&kp C		&kp V		&kp B		&kp LEFT		&kp LEFT_GUI	&kp RIGHT_GUI	&kp LEFT		&kp N		&kp M		&kp COMMA	&kp DOT		&kp FSLH	&kp BSLH
-&mo 1		&kp LCTRL	&kp LALT	&kp ESC		&kp DEL		&kp SPACE	&kp DOWN		&kp LSHFT		&kp RSHFT		&kp DOWN		&kp SPACE	&kp BSPC	&kp ENTER	&kp RALT	&kp RCTRL	&mo 2
+&mo 1		&kp LCTRL	&kp LALT	&kp ESC		&kp DEL		&kp SPACE	&kp DOWN		&td0			&td0			&kp DOWN		&kp SPACE	&kp BSPC	&kp ENTER	&kp RALT	&kp RCTRL	&mo 2
 			>;
 		};
 
