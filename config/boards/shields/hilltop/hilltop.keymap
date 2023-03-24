@@ -13,22 +13,6 @@
 #define NUM 2
 
 / {
-	combos {
-		compatible = "zmk,combos";
-		combo_lbrkt {
-            timeout-ms = <50>;
-            key-positions = <40 41>;
-            bindings = <&kp LBKT>;
-        };
-		combo_rbrkt {
-            timeout-ms = <50>;
-            key-positions = <56 57>;
-            bindings = <&kp RBKT>;
-        };
-	};
-};
-
-/ {
 	behaviors {
         td0: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
@@ -43,19 +27,53 @@
     		label = "LAYER_HOLD_TAP";
     		#binding-cells = <2>;
     		flavor = "balanced";
-    		tapping-term-ms = <200>;
+    		tapping-term-ms = <300>;
     		quick-tap-ms = <125>;
     		bindings = <&kp>, <&tog>;
 		};
+
+		lmht: layer_momentary_hold_tap {
+			compatible = "zmk,behavior-hold-tap";
+    		label = "LAYER_MOMENTARY_HOLD_TAP";
+    		#binding-cells = <2>;
+    		flavor = "balanced";
+    		tapping-term-ms = <300>;
+    		quick-tap-ms = <125>;
+    		bindings = <&mo>, <&tog>;
+		};
+
+		ht_tp: hold_tap_tap_preferred {
+			compatible = "zmk,behavior-hold-tap";
+    		label = "HOLD_TAP_TAP_PREFERRED";
+    		#binding-cells = <2>;
+    		flavor = "tap-preferred";
+    		tapping-term-ms = <300>;
+    		quick-tap-ms = <125>;
+    		bindings = <&kp>, <&kp>;
+		};
     };
+
+	combos {
+		compatible = "zmk,combos";
+		combo_lbrkt {
+            timeout-ms = <50>;
+            key-positions = <40 41>;
+            bindings = <&kp LBKT>;
+        };
+		combo_rbrkt {
+            timeout-ms = <50>;
+            key-positions = <56 57>;
+            bindings = <&kp RBKT>;
+        };
+	};
 
 	keymap {
 		compatible = "zmk,keymap";
-// | SW6  | SW5  | SW4  | SW3  | SW2  | SW1  | 5WR  |                 | 5WR  | SW1  | SW2  | SW3  | SW4  | SW5  | SW6  |
-// | SW12 | SW11 | SW10 | SW9  | SW8  | SW7  | 5WU  |                 | 5WU  | SW7  | SW8  | SW9  | SW10 | SW11 | SW12 |
-// | SW18 | SW17 | SW16 | SW15 | SW14 | SW13 | 5WC  |                 | 5WC  | SW13 | SW14 | SW15 | SW16 | SW17 | SW18 |
-// | SW24 | SW23 | SW22 | SW21 | SW20 | SW19 | 5WL  | SW31 |   | SW31 | 5WL  | SW19 | SW20 | SW21 | SW22 | SW23 | SW24 |
-// | SW30 | SW29 | SW28 | SW27 | SW26 | SW25 | 5WD  | SW32 |   | SW32 | 5WD  | SW25 | SW26 | SW27 | SW28 | SW29 | SW30 |
+// | SW0	| SW1	| SW2	| SW3	| SW4	| SW5	| SW6 5WR	|					| SW7 5WR	| SW8	| SW9	| SW10	| SW11	| SW12	| SW13	|
+// | SW14	| SW15	| SW16	| SW17	| SW18	| SW19	| SW20 5WU	|					| SW21 5WU	| SW22	| SW23	| SW24	| SW25	| SW26	| SW27	|
+// | SW28	| SW29	| SW30	| SW31	| SW32	| SW33	| SW34 5WC	|					| SW35 5WC	| SW36	| SW37	| SW38	| SW39	| SW40	| SW41	|
+// | SW42	| SW43	| SW44	| SW45	| SW46	| SW47	| SW48 5WL	| SW49	|	| SW50	| SW51 5WL	| SW52	| SW53	| SW54	| SW55	| SW56	| SW57	|
+// | SW58	| SW59	| SW60	| SW61	| SW62	| SW63	| SW64 5WD	| SW65	|	| SW66	| SW67 5WD	| SW68	| SW69	| SW70	| SW71	| SW72	| SW73	|
 
 		default_layer {
 // ------------------------------------------------------------------------------------------------------------
@@ -63,26 +81,23 @@
 // | TAB	|  Q	|  W	|  E	|  R	|  T	|  UP		|                   |  UP		|  Y	|  U	|  I	|  O	|   P	|  =	|
 // | LALT	|  A	|  S	|  D	|  F	|  G	|  WIN		|                   |  WIN		|  H	|  J	|  K	|  L	|   ;	|  '	|
 // | LCTRL	|  Z	|  X	|  C	|  V	|  B	|  LEFT		| WINLY	|	| WINLY	|  LEFT		|  N	|  M	|  ,	|  .	|   /	|  \	|
-// | LAYER	| LCTRL	| LALT	| ESC	| DEL	| SPACE	|  DOWN		| LSHFT	|	| RSHFT	|  DOWN		| SPACE	| BKSPC	| ENTER	| RALT	| RCTRL	| LAYER	|
+// | LAYER	| LAYER	| LALT	| ESC	| DEL	| SPACE	|  DOWN		| LSHFT	|	| RSHFT	|  DOWN		| SPACE	| BKSPC	| ENTER	| RALT	| RCTRL	| LAYER	|
 			bindings = <
-&kp GRAVE	&mt F1 N1	&mt F1 N2	&mt F3 N3	&mt F4 N4	&mt F5 N5	&kp RIGHT												&kp RIGHT		&mt F6 N6	&mt F7 N7	&mt F8 N8	&mt F9 N9	&mt F10 N0	&kp MINUS
-&kp TAB		&kp Q		&kp W		&kp E		&kp R		&kp T       &kp UP													&kp UP			&kp Y		&kp U		&kp I		&kp O		&kp P		&kp EQUAL
-&kp LALT	&kp A		&kp S		&kp D		&kp F		&kp G		&kp LEFT_GUI											&kp LEFT_GUI	&kp H		&kp J		&kp K		&kp L		&kp SEMI	&kp SQT
-&kp LCTRL	&kp Z		&kp X		&kp C		&kp V		&kp B		&kp LEFT		&lht LEFT_GUI SYM	&lht RIGHT_GUI NUM	&kp LEFT		&kp N		&kp M		&kp COMMA	&kp DOT		&kp FSLH	&kp BSLH
-&mo 1		&kp LCTRL	&kp LALT	&kp ESC		&kp DEL		&kp SPACE	&kp DOWN		&td0				&td0				&kp DOWN		&kp SPACE	&kp BSPC	&kp ENTER	&kp RALT	&kp RCTRL	&mo 2
+&kp GRAVE	&ht_tp F1 N1	&ht_tp F1 N2	&ht_tp F3 N3	&ht_tp F4 N4	&ht_tp F5 N5	&kp RIGHT												&kp RIGHT		&ht_tp F6 N6	&ht_tp F7 N7	&ht_tp F8 N8	&ht_tp F9 N9	&ht_tp F10 N0	&ht_tp F11 MINUS
+&kp TAB		&kp Q			&kp W			&kp E			&kp R			&kp T       	&kp UP													&kp UP			&kp Y			&kp U			&kp I			&kp O			&kp P			&ht_tp F12 EQUAL
+&kp LALT	&kp A			&kp S			&kp D			&kp F			&kp G			&kp LEFT_GUI											&kp LEFT_GUI	&kp H			&kp J			&kp K			&kp L			&kp SEMI		&kp SQT
+&kp LCTRL	&kp Z			&kp X			&kp C			&kp V			&kp B			&kp LEFT		&lht LEFT_GUI NUM	&lht RIGHT_GUI SYM	&kp LEFT		&kp N			&kp M			&kp COMMA		&kp DOT			&kp FSLH		&kp BSLH
+&lmht 0 0	&lmht 1 1		&lmht 2 2		&kp ESC			&kp DEL			&kp SPACE		&kp DOWN		&td0				&td0				&kp DOWN		&kp SPACE		&kp BSPC		&kp ENTER		&kp RALT		&kp RCTRL		&lmht 2 2
 			>;
 		};
 
 		lower_layer {
-// ------------------------------------------------------------------------------------------------------------
-// | BTCLR | BT1 | BT2 |  BT3 |  BT4 |  BT5 |                   |      |       |       |      |       |       |
-
 			bindings = <
-&bt BT_CLR	&bt BT_SEL 0	&bt BT_SEL 1	&bt BT_SEL 2	&bt BT_SEL 3	&bt BT_SEL 4	&kp END													&kp END			&kp C_VOL_UP	&kp C_VOL_DN	&kp C_PLAY_PAUSE	&kp K_APPLICATION	&kp PRINTSCREEN	&kp K_LOCK
-&kp F1		&kp F2			&kp F3			&kp F4			&kp F5			&kp F6			&kp PG_UP												&kp PG_UP		&kp F7			&kp F8			&kp F9				&kp F10				&kp F11			&kp F12
-&kp GRAVE	&kp EXCL		&kp AT			&kp HASH		&kp DOLLAR		&kp PRCNT		&kp LEFT_GUI											&kp LEFT_GUI	&kp CARET		&kp AMPS		&kp KP_MULTIPLY		&kp LPAR			&kp RPAR		&kp TILDE
-&kp CARET	&kp AMPS		&kp KP_MULTIPLY	&kp LPAR		&kp RPAR		&kp TILDE		&kp HOME		&lht LEFT_GUI SYM	&lht RIGHT_GUI SYM	&kp HOME		&kp GRAVE		&kp EXCL		&kp AT				&kp HASH			&kp DOLLAR		&kp PRCNT
-&trans		&trans			&trans			&trans			&trans			&trans			&kp PG_DN		&trans				&trans				&kp PG_DN		&trans			&trans			&trans				&kp LBKT			&kp RBKT		&trans
+&bt BT_CLR	&bt BT_SEL 0	&bt BT_SEL 1	&bt BT_SEL 2	&bt BT_SEL 3	&bt BT_SEL 4	&kp END													&kp END			&kp K_APPLICATION	&kp C_VOL_DN	&kp C_PLAY_PAUSE	&kp C_VOL_UP	&kp PRINTSCREEN	&kp K_LOCK
+&trans		&none			&none			&none			&none			&none			&kp PG_UP												&kp PG_UP		&none				&none			&none				&none			&none			&none
+&trans		&kp EXCL		&kp AT			&kp HASH		&kp DOLLAR		&kp PRCNT		&kp LEFT_GUI											&kp LEFT_GUI	&kp CARET			&kp AMPS		&kp KP_MULTIPLY		&kp LPAR		&kp RPAR		&none
+&trans		&none			&none			&none			&none			&none			&kp HOME		&lht LEFT_GUI SYM	&lht RIGHT_GUI SYM	&kp HOME		&none				&kp LBKT		&kp RBKT			&kp LBRC		&kp RBRC		&none
+&trans		&trans			&trans			&trans			&trans			&trans			&kp PG_DN		&trans				&trans				&kp PG_DN		&trans				&trans			&trans				&trans			&trans			&trans
 			>;
 		};
 
