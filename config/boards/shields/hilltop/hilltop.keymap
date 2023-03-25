@@ -105,7 +105,7 @@
 &kp TAB				&kp Q			&kp W			&kp E				&kp R			&kp T       	&navt UP PG_UP												&navt PG_UP UP		&kp Y			&kp U			&kp I				&kp O			&kp P			&ht_tp F12 EQUAL
 &kp LALT			&kp A			&kp S			&kp D				&kp F			&kp G			&navlock													&navlock			&kp H			&kp J			&kp K				&kp L			&kp SEMI		&kp SQT
 &kp LCTRL			&kp Z			&kp X			&kp C				&kp V			&kp B			&navt LEFT HOME		&lht LEFT_GUI NUM	&lht RIGHT_GUI SYM	&navt HOME LEFT		&kp N			&kp M			&kp COMMA			&kp DOT			&kp FSLH		&kp BSLH
-&lmht ALPHA ALPHA	&lmht NUM NUM	&lmht SYM SYM	&ht_tp ENTER ESC	&kp DEL			&capd			&navt DOWN PG_DN	&kp SPACE			&capd				&navt PG_DN DOWN	&kp SPACE		&kp BSPC		&ht_tp ESC ENTER	&kp RALT		&kp RCTRL		&lmht NUM NUM
+&lmht MOUSE MOUSE	&lmht NUM NUM	&lmht SYM SYM	&ht_tp ENTER ESC	&kp DEL			&capd			&navt DOWN PG_DN	&kp SPACE			&capd				&navt PG_DN DOWN	&kp SPACE		&kp BSPC		&ht_tp ESC ENTER	&kp RALT		&kp RCTRL		&lmht NUM NUM
 			>;
 		};
 
