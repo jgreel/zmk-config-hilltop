@@ -58,7 +58,7 @@
     		label = "HOLD_TAP_TAP_PREFERRED";
     		#binding-cells = <2>;
     		flavor = "tap-preferred";
-    		tapping-term-ms = <300>;
+    		tapping-term-ms = <200>;
     		quick-tap-ms = <125>;
     		bindings = <&kp>, <&kp>;
 		};
