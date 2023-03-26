@@ -43,7 +43,7 @@
     		bindings = <&mo>, <&tog>;
 		};
 
-		ltht: layer_to_hold_tap {
+/*		ltht: layer_to_hold_tap {
 			compatible = "zmk,behavior-hold-tap";
     		label = "LAYER_TO_HOLD_TAP";
     		#binding-cells = <2>;
@@ -52,6 +52,7 @@
     		quick-tap-ms = <125>;
     		bindings = <&to>, <&kp>;
 		};
+*/
 
 		ht_tp: hold_tap_tap_preferred {
 			compatible = "zmk,behavior-hold-tap";
@@ -111,11 +112,11 @@
 // | LCTRL	|  Z	|  X	|  C	|  V	|  B	|  LEFT		| WINLY	|	| WINLY	|  LEFT		|  N	|  M	|  ,	|  .	|   /	|  \	|
 // | LAYER	| LAYER	| LALT	| ESC	| DEL	| SPACE	|  DOWN		| LSHFT	|	| RSHFT	|  DOWN		| SPACE	| BKSPC	| ENTER	| RALT	| RCTRL	| LAYER	|
 			bindings = <
-&kp GRAVE			&ht_tp F1 N1	&ht_tp F1 N2	&ht_tp F3 N3		&ht_tp F4 N4	&ht_tp F5 N5		&navt RIGHT END									&navt END RIGHT		&ht_tp F6 N6		&ht_tp F7 N7	&ht_tp F8 N8		&ht_tp F9 N9	&ht_tp F10 N0	&ht_tp F11 MINUS
-&kp TAB				&kp Q			&kp W			&kp E				&kp R			&kp T       		&navt UP PG_UP									&navt PG_UP UP		&kp Y				&kp U			&kp I				&kp O			&kp P			&ht_tp F12 EQUAL
-&kp LALT			&kp A			&kp S			&kp D				&kp F			&kp G				&navlock										&navlock			&kp H				&kp J			&kp K				&kp L			&kp SEMI		&kp SQT
-&kp LCTRL			&kp Z			&kp X			&kp C				&kp V			&kp B				&navt LEFT HOME		&kp LGUI		&kp RGUI	&navt HOME LEFT		&kp N				&kp M			&kp COMMA			&kp DOT			&kp FSLH		&kp BSLH
-&lmht MOUSE MOUSE	&lmht NUM NUM	&lmht SYM SYM	&ht_tp ENTER ESC	&kp DEL			&ht_tp LSHIFT SPACE	&navt DOWN PG_DN	&lmht NUM NUM 	&kp SYM SYM	&navt PG_DN DOWN	&ht_tp LSHIFT SPACE	&kp BSPC		&ht_tp ESC ENTER	&kp RALT		&kp RCTRL		&lmht NUM NUM
+&kp GRAVE			&ht_tp F1 N1	&ht_tp F1 N2	&ht_tp F3 N3		&ht_tp F4 N4	&ht_tp F5 N5		&navt RIGHT END										&navt END RIGHT		&ht_tp F6 N6		&ht_tp F7 N7	&ht_tp F8 N8		&ht_tp F9 N9	&ht_tp F10 N0	&ht_tp F11 MINUS
+&kp TAB				&kp Q			&kp W			&kp E				&kp R			&kp T       		&navt UP PG_UP										&navt PG_UP UP		&kp Y				&kp U			&kp I				&kp O			&kp P			&ht_tp F12 EQUAL
+&kp LALT			&kp A			&kp S			&kp D				&kp F			&kp G				&navlock											&navlock			&kp H				&kp J			&kp K				&kp L			&kp SEMI		&kp SQT
+&kp LCTRL			&kp Z			&kp X			&kp C				&kp V			&kp B				&navt LEFT HOME		&kp LGUI		&kp RGUI		&navt HOME LEFT		&kp N				&kp M			&kp COMMA			&kp DOT			&kp FSLH		&kp BSLH
+&lmht MOUSE MOUSE	&lmht NUM NUM	&lmht SYM SYM	&ht_tp ENTER ESC	&kp DEL			&ht_tp LSHIFT SPACE	&navt DOWN PG_DN	&lmht NUM NUM 	&lmht SYM SYM	&navt PG_DN DOWN	&ht_tp LSHIFT SPACE	&kp BSPC		&ht_tp ESC ENTER	&kp RALT		&kp RCTRL		&lmht NUM NUM
 			>;
 		};
 
@@ -135,7 +136,7 @@
 &trans	&none	&kp KP_N7		&kp KP_N8		&kp KP_N9		&kp KP_MINUS	&trans											&trans	&none		&kp KP_N7		&kp KP_N8		&kp KP_N9		&kp KP_MINUS	&none
 &trans	&none	&kp KP_N4		&kp KP_N5		&kp KP_N6		&kp KP_PLUS		&trans											&trans	&none		&kp KP_N4		&kp KP_N5		&kp KP_N6		&kp KP_PLUS		&none
 &trans	&none	&kp KP_N1		&kp KP_N2		&kp KP_N3		&kp KP_DOT		&trans	&trans				&trans				&trans	&none		&kp KP_N1		&kp KP_N2		&kp KP_N3		&kp KP_DOT		&none
-&trans	&trans	&trans			&trans			&trans			&kp KP_N0		&trans	&ltht ALPHA SPACE	&ltht ALPHA SPACE	&trans	&kp KP_N0	&trans			&kp KP_ENTER	&trans			&trans			&trans
+&trans	&trans	&trans			&trans			&trans			&kp KP_N0		&trans	/*&ltht ALPHA SPACE	&ltht ALPHA SPACE*/ &kp SPACE &kp SPACE	&trans	&kp KP_N0	&trans			&kp KP_ENTER	&trans			&trans			&trans
 			>;
 		};
 
