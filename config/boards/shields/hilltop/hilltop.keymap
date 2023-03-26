@@ -43,7 +43,7 @@
     		bindings = <&mo>, <&tog>;
 		};
 
-/*		ltht: layer_to_hold_tap {
+		ltht: layer_to_hold_tap {
 			compatible = "zmk,behavior-hold-tap";
     		label = "LAYER_TO_HOLD_TAP";
     		#binding-cells = <2>;
@@ -52,7 +52,6 @@
     		quick-tap-ms = <125>;
     		bindings = <&to>, <&kp>;
 		};
-*/
 
 		ht_tp: hold_tap_tap_preferred {
 			compatible = "zmk,behavior-hold-tap";
@@ -136,7 +135,7 @@
 &trans	&none	&kp KP_N7		&kp KP_N8		&kp KP_N9		&kp KP_MINUS	&trans											&trans	&none		&kp KP_N7		&kp KP_N8		&kp KP_N9		&kp KP_MINUS	&none
 &trans	&none	&kp KP_N4		&kp KP_N5		&kp KP_N6		&kp KP_PLUS		&trans											&trans	&none		&kp KP_N4		&kp KP_N5		&kp KP_N6		&kp KP_PLUS		&none
 &trans	&none	&kp KP_N1		&kp KP_N2		&kp KP_N3		&kp KP_DOT		&trans	&trans				&trans				&trans	&none		&kp KP_N1		&kp KP_N2		&kp KP_N3		&kp KP_DOT		&none
-&trans	&trans	&trans			&trans			&trans			&kp KP_N0		&trans	/*&ltht ALPHA SPACE	&ltht ALPHA SPACE*/ &kp SPACE &kp SPACE	&trans	&kp KP_N0	&trans			&kp KP_ENTER	&trans			&trans			&trans
+&trans	&trans	&trans			&trans			&trans			&kp KP_N0		&trans	&ltht ALPHA SPACE	&ltht ALPHA SPACE	&trans	&kp KP_N0	&trans			&kp KP_ENTER	&trans			&trans			&trans
 			>;
 		};
 
