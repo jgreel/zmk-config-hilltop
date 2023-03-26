@@ -98,6 +98,11 @@
             key-positions = <28 29>;
             bindings = <&kp CAPS>;
         };
+		combo_winshift {
+            timeout-ms = <50>;
+            key-positions = <50 66>;
+            bindings = <&kp LG(LSHFT)>;
+        };		
 	};
 
 	keymap {
@@ -126,11 +131,11 @@
 
 		symbol_layer {
 			bindings = <
-&bt BT_CLR	&bt BT_SEL 0	&bt BT_SEL 1	&bt BT_SEL 2	&bt BT_SEL 3	&bt BT_SEL 4	&trans					&trans		&kp K_APPLICATION	&kp C_VOL_DN	&kp C_PLAY_PAUSE	&kp C_VOL_UP	&kp PRINTSCREEN	&kp K_LOCK
-&trans		&none			&none			&none			&none			&none			&trans					&trans		&none				&none			&none				&none			&none			&none
-&trans		&kp EXCL		&kp AT			&kp HASH		&kp DOLLAR		&kp PRCNT		&trans					&trans		&kp CARET			&kp AMPS		&kp KP_MULTIPLY		&kp LPAR		&kp RPAR		&none
-&trans		&none			&none			&none			&none			&none			&trans	&trans	&trans	&trans		&none				&kp LBKT		&kp RBKT			&kp LBRC		&kp RBRC		&none
-&trans		&trans			&trans			&trans			&trans			&trans			&trans	&trans	&trans	&trans		&trans				&trans			&trans				&trans			&trans			&trans
+&bt BT_CLR	&bt BT_SEL 0	&bt BT_SEL 1	&bt BT_SEL 2	&bt BT_SEL 3	&bt BT_SEL 4	&navt END RIGHT						&navt RIGHT END			&kp K_APPLICATION	&kp C_VOL_DN	&kp C_PLAY_PAUSE	&kp C_VOL_UP	&kp PRINTSCREEN	&kp K_LOCK
+&trans		&none			&none			&none			&none			&none			&navt PG_UP UP						&navt UP PG_UP			&none				&none			&none				&none			&none			&none
+&trans		&kp EXCL		&kp AT			&kp HASH		&kp DOLLAR		&kp PRCNT		&navlock							&navlock				&kp CARET			&kp AMPS		&kp KP_MULTIPLY		&kp LPAR		&kp RPAR		&none
+&trans		&none			&none			&none			&none			&none			&navt HOME LEFT		&trans	&trans	&navt LEFT HOME			&none				&kp LBKT		&kp RBKT			&kp LBRC		&kp RBRC		&none
+&trans		&trans			&trans			&trans			&trans			&trans			&navt PG_DN DOWN	&trans	&trans	&navt DOWN PG_DN		&trans				&trans			&trans				&trans			&trans			&trans
 			>;
 		};
 
