@@ -9,24 +9,6 @@
 
 / {
 	behaviors {
-        capd: caps_dance {
-            compatible = "zmk,behavior-tap-dance";
-            label = "CAPS_DANCE";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp LSHIFT>, <&kp CAPS>;
-        };
-
-		lht: layer_hold_tap {
-			compatible = "zmk,behavior-hold-tap";
-    		label = "LAYER_HOLD_TAP";
-    		#binding-cells = <2>;
-    		flavor = "balanced";
-    		tapping-term-ms = <300>;
-    		quick-tap-ms = <125>;
-    		bindings = <&kp>, <&tog>;
-		};
-
 		lmht: layer_momentary_hold_tap {
 			compatible = "zmk,behavior-hold-tap";
     		label = "LAYER_MOMENTARY_HOLD_TAP";
@@ -35,16 +17,6 @@
     		tapping-term-ms = <300>;
     		quick-tap-ms = <125>;
     		bindings = <&mo>, <&tog>;
-		};
-
-		ltht: layer_to_hold_tap {
-			compatible = "zmk,behavior-hold-tap";
-    		label = "LAYER_TO_HOLD_TAP";
-    		#binding-cells = <2>;
-    		flavor = "tap-preferred";
-    		tapping-term-ms = <300>;
-    		quick-tap-ms = <125>;
-    		bindings = <&to>, <&kp>;
 		};
 
 		ht_tp: hold_tap_tap_preferred {
@@ -155,11 +127,11 @@
 
 		mouse_layer {
 			bindings = <
-&none	&none	&none	&none	&none	&none	&trans												&trans	&none	&none	&none	&none	&none	&none
-&trans	&none	&none	&none	&none	&none	&trans												&trans	&none	&none	&none	&none	&none	&none
-&trans	&none	&none	&none	&none	&none	&trans												&trans	&none	&none	&none	&none	&none	&none
-&trans	&none	&none	&none	&none	&none	&trans	&lht LEFT_GUI MOUSE	&lht RIGHT_GUI MOUSE	&trans	&none	&none	&none	&none	&none	&none
-&trans	&trans	&trans	&trans	&trans	&trans	&trans	&trans				&trans					&trans	&trans	&trans	&trans	&trans	&trans	&trans
+&none	&none	&none	&none	&none	&none	&trans													&trans	&none	&none	&none	&none	&none	&none
+&trans	&none	&none	&none	&none	&none	&trans													&trans	&none	&none	&none	&none	&none	&none
+&trans	&none	&none	&none	&none	&none	&trans													&trans	&none	&none	&none	&none	&none	&none
+&trans	&none	&none	&none	&none	&none	&trans	&lmht LEFT_GUI MOUSE	&lmht RIGHT_GUI MOUSE	&trans	&none	&none	&none	&none	&none	&none
+&trans	&trans	&trans	&trans	&trans	&trans	&trans	&trans					&trans						&trans	&trans	&trans	&trans	&trans	&trans	&trans
 			>;
 		};
 
