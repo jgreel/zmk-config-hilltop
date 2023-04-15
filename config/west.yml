@@ -6,8 +6,8 @@ manifest:
       url-base: https://github.com/jgreel   
   projects:
     - name: zmk
-      remote: jgreel
-      revision: statusled&customlock
+      remote: zmkfirmware
+      revision: main
       import: app/west.yml
   self:
     path: config
