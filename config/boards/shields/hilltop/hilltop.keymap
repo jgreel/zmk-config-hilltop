@@ -75,11 +75,11 @@
 // | LCTRL	|  Z	|  X	|  C	|  V	|  B	| LEFT		|  WIN	|	|  WIN	| HOME		|  N	|  M	|  ,	|  .	|   /	|  \	|
 // | SYMLAY	|WINCTL	|WINSHF	|ESC/EN	| DEL	|SP/SHFT| DOWN		|NUMLAY	|	|SYMLAY	| PGDN		| SPACE	| BKSPC	|ENT/ES	| RALT	| RCTRL	|NUMLAY	|
 			bindings = <
-&kp GRAVE	&ht_tp F1 N1	&ht_tp F1 N2	&ht_tp F3 N3		&ht_tp F4 N4		&ht_tp F5 N5			&kp RIGHT							&kp END		&ht_tp F6 N6			&ht_tp F7 N7		&ht_tp F8 N8		&ht_tp F9 N9	&ht_tp F10 N0	&ht_tp F11 MINUS
-&kp TAB		&kp Q			&kp W			&kp E				&kp R				&kp T       			&kp UP								&kp PG_UP	&kp Y					&kp U				&kp I				&kp O			&kp P			&ht_tp F12 EQUAL
-&kp LALT	&kp A			&kp S			&kp D				&kp F				&kp G					&none								&none		&kp H					&kp J				&kp K				&kp L			&kp SEMI		&kp SQT
-&kp LCTRL	&kp Z			&kp X			&kp C				&kp V				&kp B					&kp LEFT	&kp LGUI	&kp RGUI	&kp HOME	&kp N					&kp M				&kp COMMA			&kp DOT			&kp FSLH		&kp BSLH
-&tog SYM	&kp LG(LCTRL)	&kp LG(LSHFT)	&ht_tp ENTER ESC	&ht_tp BSPC DEL		&ht_bal LSHIFT SPACE	&kp DOWN	&mo NUM 	&mo SYM		&kp PG_DN	&ht_bal LSHIFT SPACE	&ht_tp DEL BSPC		&ht_tp ESC ENTER	&kp RALT		&kp RCTRL		&tog NUM
+&kp GRAVE	&ht_tp F1 N1	&ht_tp F1 N2	&ht_tp F3 N3		&ht_tp F4 N4	&ht_tp F5 N5			&kp RIGHT							&kp END		&ht_tp F6 N6			&ht_tp F7 N7	&ht_tp F8 N8		&ht_tp F9 N9	&ht_tp F10 N0	&ht_tp F11 MINUS
+&kp TAB		&kp Q			&kp W			&kp E				&kp R			&kp T       			&kp UP								&kp PG_UP	&kp Y					&kp U			&kp I				&kp O			&kp P			&ht_tp F12 EQUAL
+&kp LALT	&kp A			&kp S			&kp D				&kp F			&kp G					&none								&none		&kp H					&kp J			&kp K				&kp L			&kp SEMI		&kp SQT
+&kp LCTRL	&kp Z			&kp X			&kp C				&kp V			&kp B					&kp LEFT	&kp LGUI	&kp RGUI	&kp HOME	&kp N					&kp M			&kp COMMA			&kp DOT			&kp FSLH		&kp BSLH
+&tog SYM	&kp LG(LCTRL)	&kp LG(LSHFT)	&ht_tp ENTER ESC	&kp DEL			&ht_bal LSHIFT SPACE	&kp DOWN	&mo NUM 	&mo SYM		&kp PG_DN	&ht_bal LSHIFT SPACE	&kp BSPC		&ht_tp ESC ENTER	&kp RALT		&kp RCTRL		&tog NUM
 			>;
 		};
 
