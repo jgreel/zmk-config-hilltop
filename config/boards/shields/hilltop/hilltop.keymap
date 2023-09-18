@@ -103,10 +103,10 @@
 
 		raise_layer {
 			bindings = <
-&none	&none		&kp KP_CLEAR	&kp KP_DIVIDE	&kp KP_MULTIPLY	&none			&kp RIGHT												&kp END			&none		&kp KP_CLEAR	&kp KP_DIVIDE	&kp KP_MULTIPLY	&none			&none
-&trans	&none		&kp KP_N7		&kp KP_N8		&kp KP_N9		&kp KP_MINUS	&kp UP													&kp PG_UP		&none		&kp KP_N7		&kp KP_N8		&kp KP_N9		&kp KP_MINUS	&none
-&trans	&none		&kp KP_N4		&kp KP_N5		&kp KP_N6		&kp KP_PLUS		&kp LEFT_GUI											&kp LEFT_GUI	&none		&kp KP_N4		&kp KP_N5		&kp KP_N6		&kp KP_PLUS		&none
-&trans	&kp KP_N0	&kp KP_N1		&kp KP_N2		&kp KP_N3		&kp KP_DOT		&kp LEFT		&lht LEFT_GUI NUM	&lht RIGHT_GUI NUM	&kp HOME		&kp KP_N0	&kp KP_N1		&kp KP_N2		&kp KP_N3		&kp KP_DOT		&none
+&none	&none		&kp KP_CLEAR	&kp KP_DIVIDE	&kp KP_MULTIPLY	&none			&kp RIGHT												&kp END			&none		&kp KP_CLEAR	&kp KP_DIVIDE	&kp KP_MULTIPLY	&none			&trans
+&trans	&none		&kp KP_N7		&kp KP_N8		&kp KP_N9		&kp KP_MINUS	&kp UP													&kp PG_UP		&none		&kp KP_N7		&kp KP_N8		&kp KP_N9		&kp KP_MINUS	&trans
+&trans	&none		&kp KP_N4		&kp KP_N5		&kp KP_N6		&kp KP_PLUS		&kp LEFT_GUI											&kp LEFT_GUI	&none		&kp KP_N4		&kp KP_N5		&kp KP_N6		&kp KP_PLUS		&trans
+&trans	&kp KP_N0	&kp KP_N1		&kp KP_N2		&kp KP_N3		&kp KP_DOT		&kp LEFT		&lht LEFT_GUI NUM	&lht RIGHT_GUI NUM	&kp HOME		&kp KP_N0	&kp KP_N1		&kp KP_N2		&kp KP_N3		&kp KP_DOT		&trans
 &trans	&trans		&trans			&kp KP_ENTER	&trans			&trans			&kp DOWN		&trans				&trans				&kp PG_DN		&trans		&trans			&kp KP_ENTER	&trans			&trans			&trans
 			>;
 		};
