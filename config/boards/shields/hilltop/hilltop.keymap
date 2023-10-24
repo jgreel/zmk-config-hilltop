@@ -80,7 +80,7 @@
 &kp TAB				&kp Q			&kp W			&kp E				&kp R			&kp T       			&kp UP								&kp PG_UP	&kp Y					&kp U			&kp I				&kp O			&kp P			&ht_tp F12 EQUAL
 &ht_bal LSHFT CAPS	&kp A			&kp S			&kp D				&kp F			&kp G					&none								&none		&kp H					&kp J			&kp K				&kp L			&kp SEMI		&kp SQT
 &kp LCTRL			&kp Z			&kp X			&kp C				&kp V			&kp B					&kp LEFT	&mo SYM		&mo NUM		&kp HOME	&kp N					&kp M			&kp COMMA			&kp DOT			&kp FSLH		&kp BSLH
-&kp LGUI			&kp LCTRL		&kp LALT		&ht_tp ENTER ESC	&kp DEL			&ht_bal LSHIFT SPACE	&kp DOWN	&mo NUM 	&mo SYM		&kp PG_DN	&ht_bal LSHIFT SPACE	&kp BSPC		&ht_tp ESC ENTER	&kp RALT		&kp RCTRL		&kp RGUI
+&kp LGUI			&kp LCTRL		&kp LALT		&ht_tp ENTER ESC	&kp DEL			&ht_bal LSHIFT SPACE	&kp DOWN	&mo NUM 	&mo MOUSE	&kp PG_DN	&ht_bal LSHIFT SPACE	&kp BSPC		&ht_tp ESC ENTER	&kp RALT		&kp RCTRL		&kp RGUI
 			>;
 		};
 
