@@ -54,13 +54,13 @@
 			timeout-ms = <1000000>;
 			key-positions = <49 65>;
 			bindings = <&mo MOUSE>;
-			slow-release = <true>;
+			slow-release = true;
 		};
 		combo_mouse_right {
 			timeout-ms = <1000000>;
 			key-positions = <50 66>;
 			bindings = <&mo MOUSE>;
-			slow-release = <true>;
+			slow-release = true;
 		};
 	};
 
