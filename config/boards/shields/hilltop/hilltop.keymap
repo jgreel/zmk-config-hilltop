@@ -61,10 +61,12 @@
             bindings = <&to ALPHA>;
         };
 		combo_mouse_left {
+			timeout-ms = <1000000>;
 			key-positions = <49 65>;
 			bindings = <&mo MOUSE>;
 		};
 		combo_mouse_right {
+			timeout-ms = <1000000>;
 			key-positions = <50 66>;
 			bindings = <&mo MOUSE>;
 		};
