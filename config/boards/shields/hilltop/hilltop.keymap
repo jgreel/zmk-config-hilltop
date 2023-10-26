@@ -58,6 +58,39 @@
 		};
 	};
 
+// mouse config
+
+&mmv {
+	time-to-max-speed = <250>;
+	acceleration-exponent = <1>;
+};
+
+&mwh {
+	time-to-max-speed = <3000>;
+	acceleration-exponent = <1>;
+};
+
+#define U_MOUSE_MOVE_MAX 1250       // 600
+#define U_MOUSE_SCROLL_MAX 100      // 10
+
+#undef MOVE_UP
+#undef MOVE_DOWN
+#undef MOVE_LEFT
+#undef MOVE_RIGHT
+#define MOVE_UP MOVE_VERT(-U_MOUSE_MOVE_MAX)
+#define MOVE_DOWN MOVE_VERT(U_MOUSE_MOVE_MAX)
+#define MOVE_LEFT MOVE_HOR(-U_MOUSE_MOVE_MAX)
+#define MOVE_RIGHT MOVE_HOR(U_MOUSE_MOVE_MAX)
+
+#undef SCROLL_UP
+#undef SCROLL_DOWN
+#undef SCROLL_LEFT
+#undef SCROLL_RIGHT
+#define SCROLL_UP SCROLL_VERT(U_MOUSE_SCROLL_MAX)
+#define SCROLL_DOWN SCROLL_VERT(-U_MOUSE_SCROLL_MAX)
+#define SCROLL_LEFT SCROLL_HOR(-U_MOUSE_SCROLL_MAX)
+#define SCROLL_RIGHT SCROLL_HOR(U_MOUSE_SCROLL_MAX)
+
 	keymap {
 		compatible = "zmk,keymap";
 // | SW0	| SW1	| SW2	| SW3	| SW4	| SW5	| SW6 5WR	|					| SW7 5WR	| SW8	| SW9	| SW10	| SW11	| SW12	| SW13	|
@@ -104,11 +137,11 @@
 
 		mouse_layer {
 			bindings = <
-&none	&none		&none			&none			&none			&none	&trans					&trans	&none	&none			&none			&none			&none	&none
-&trans	&none		&mkp RCLK		&mmv MOVE_UP	&mkp LCLK		&none	&trans					&trans	&none	&mkp LCLK		&mmv MOVE_UP	&mkp RCLK		&none	&none
-&trans	&mkp MCLK	&mmv MOVE_LEFT	&mmv MOVE_DOWN	&mmv MOVE_RIGHT	&none	&trans					&trans	&none	&mmv MOVE_LEFT	&mmv MOVE_DOWN	&mmv MOVE_RIGHT	&none	&none
-&trans	&none		&none			&none			&none			&none	&trans	&none	&none	&trans	&none	&none			&none			&none			&none	&none
-&trans	&trans		&trans			&trans			&trans			&trans	&trans	&none	&none	&trans	&trans	&trans			&trans			&trans			&trans	&trans
+&none	&none				&none				&none			&none				&none				&trans					&trans	&none				&none				&mmv MOVE_UP	&none				&none				&none
+&trans	&none				&mmv MOVE_LEFT		&mmv MOVE_UP	&mmv MOVE_RIGHT		&mwh SCROLL_UP		&trans					&trans	&mwh SCROLL_UP		&mmv MOVE_LEFT		&mmv MOVE_DOWN	&mmv MOVE_RIGHT		&none				&none
+&trans	&mkp MCLK			&mkp RCLK			&mmv MOVE_DOWN	&mkp LCLK			&mwh SCROLL_DOWN	&trans					&trans	&mwh SCROLL_DOWN	&mkp LCLK			&mkp MCLK		&mkp RCLK			&mwh SCROLL_UP		&none
+&trans	&mwh SCROLL_DOWN	&mwh SCROLL_LEFT	&none			&mwh SCROLL_RIGHT	&none				&trans	&none	&none	&trans	&none				&mwh SCROLL_LEFT	&none			&mwh SCROLL_RIGHT	&mwh SCROLL_DOWN	&none
+&trans	&trans				&trans				&trans			&trans				&trans				&trans	&none	&none	&trans	&trans				&trans				&trans			&trans				&trans				&trans
 			>;
 		};
 
