@@ -11,13 +11,15 @@
 //#include "mouse.dtsi"
 
 &mmv {
-	time-to-max-speed = <250>;
-	acceleration-exponent = <1>;
+	acceleration-exponent = <1>;      // 1
+	time-to-max-speed-ms = <1500>;    // 40
+	delay-ms = <0>;                   // 0
 };
-
+  
 &mwh {
-	time-to-max-speed = <3000>;
-	acceleration-exponent = <1>;
+	acceleration-exponent = <1>;      // 0
+	time-to-max-speed-ms = <5000>;    // 40
+	delay-ms = <0>;                   // 10
 };
 
 / {
