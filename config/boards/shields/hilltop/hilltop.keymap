@@ -8,6 +8,8 @@
 #define NUM 2
 #define MOUSE 3
 
+#include "mouse.dtsi"
+
 / {
 	behaviors {
 		ht_tp: hold_tap_tap_preferred {
@@ -57,39 +59,6 @@
 			bindings = <&mo MOUSE>;
 		};
 	};
-
-// mouse config
-
-&mmv {
-	time-to-max-speed = <250>;
-	acceleration-exponent = <1>;
-};
-
-&mwh {
-	time-to-max-speed = <3000>;
-	acceleration-exponent = <1>;
-};
-
-#define U_MOUSE_MOVE_MAX 1250       // 600
-#define U_MOUSE_SCROLL_MAX 100      // 10
-
-#undef MOVE_UP
-#undef MOVE_DOWN
-#undef MOVE_LEFT
-#undef MOVE_RIGHT
-#define MOVE_UP MOVE_VERT(-U_MOUSE_MOVE_MAX)
-#define MOVE_DOWN MOVE_VERT(U_MOUSE_MOVE_MAX)
-#define MOVE_LEFT MOVE_HOR(-U_MOUSE_MOVE_MAX)
-#define MOVE_RIGHT MOVE_HOR(U_MOUSE_MOVE_MAX)
-
-#undef SCROLL_UP
-#undef SCROLL_DOWN
-#undef SCROLL_LEFT
-#undef SCROLL_RIGHT
-#define SCROLL_UP SCROLL_VERT(U_MOUSE_SCROLL_MAX)
-#define SCROLL_DOWN SCROLL_VERT(-U_MOUSE_SCROLL_MAX)
-#define SCROLL_LEFT SCROLL_HOR(-U_MOUSE_SCROLL_MAX)
-#define SCROLL_RIGHT SCROLL_HOR(U_MOUSE_SCROLL_MAX)
 
 	keymap {
 		compatible = "zmk,keymap";
