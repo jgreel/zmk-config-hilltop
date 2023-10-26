@@ -8,7 +8,7 @@
 #define NUM 2
 #define MOUSE 3
 
-//#include "mouse.dtsi"
+#include "mouse.dtsi"
 
 / {
 	behaviors {
