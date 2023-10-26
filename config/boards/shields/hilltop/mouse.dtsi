@@ -1,18 +1,18 @@
 #include <dt-bindings/zmk/mouse.h>
 
 &mmv {
-    acceleration-exponent = <2>;      // 1
+    acceleration-exponent = <1>;      // 1
     time-to-max-speed-ms = <500>;    // 40
     delay-ms = <0>;                   // 0
 };
   
 &mwh {
-    acceleration-exponent = <2>;      // 0
+    acceleration-exponent = <1>;      // 0
     time-to-max-speed-ms = <1000>;    // 40
     delay-ms = <0>;                   // 10
 };
 
-#define U_MOUSE_MOVE_MAX 2000       // 600
+#define U_MOUSE_MOVE_MAX 1000       // 600
 #define U_MOUSE_SCROLL_MAX 500      // 10
 
 #undef MOVE_UP
