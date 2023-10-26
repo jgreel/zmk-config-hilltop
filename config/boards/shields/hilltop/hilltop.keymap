@@ -8,19 +8,7 @@
 #define NUM 2
 #define MOUSE 3
 
-//#include "mouse.dtsi"
-
-&mmv {
-	acceleration-exponent = <1>;      // 1
-	time-to-max-speed-ms = <1500>;    // 40
-	delay-ms = <0>;                   // 0
-};
-  
-&mwh {
-	acceleration-exponent = <1>;      // 0
-	time-to-max-speed-ms = <5000>;    // 40
-	delay-ms = <0>;                   // 10
-};
+#include "mouse.dtsi"
 
 / {
 	behaviors {
