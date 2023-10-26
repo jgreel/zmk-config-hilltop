@@ -10,6 +10,16 @@
 
 //#include "mouse.dtsi"
 
+&mmv {
+	time-to-max-speed = <250>;
+	acceleration-exponent = <1>;
+};
+
+&mwh {
+	time-to-max-speed = <3000>;
+	acceleration-exponent = <1>;
+};
+
 / {
 	behaviors {
 		ht_tp: hold_tap_tap_preferred {
