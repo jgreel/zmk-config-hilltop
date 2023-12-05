@@ -62,6 +62,18 @@
 			bindings = <&mo SYM>;
 			slow-release;
 		};
+		combo_lay_left2 {
+			timeout-ms = <100>;
+			key-positions = <46 62>;
+			bindings = <&mo MOUSE>;
+			slow-release;
+		};
+		combo_lay_right2 {
+			timeout-ms = <100>;
+			key-positions = <53 69>;
+			bindings = <&mo MOUSE>;
+			slow-release;
+		};
 	};
 
 	keymap {
@@ -110,9 +122,9 @@
 
 		mouse_layer {
 			bindings = <
-&none	&none				&none				&none			&none				&none		&mmv MOVE_RIGHT					&mmv MOVE_RIGHT		&none		&none				&none			&none				&none				&none
-&trans	&mkp MCLK			&mkp RCLK			&mmv MOVE_UP	&mkp LCLK			&mkp MB4	&mmv MOVE_UP					&mmv MOVE_UP		&mkp MB4	&mkp LCLK			&mmv MOVE_UP	&mkp RCLK			&mkp MCLK			&none
-&trans	&mkp MCLK			&mmv MOVE_LEFT		&mmv MOVE_DOWN	&mmv MOVE_RIGHT		&mkp MB5	&none							&none				&mkp MB5	&mmv MOVE_LEFT		&mmv MOVE_DOWN	&mmv MOVE_RIGHT		&mkp MCLK			&none
+&none	&kp LSHFT			&mkp RCLK			&mkp MCLK		&mkp LCLK			&mkp MB4	&mmv MOVE_RIGHT					&mmv MOVE_RIGHT		&mkp MB4	&mkp LCLK			&mkp MCLK		&mkp RCLK			&kp LSHFT			&none
+&trans	&kp LCRTL			&mkp RCLK			&mkp MCLK		&mkp LCLK			&mkp MB5	&mmv MOVE_UP					&mmv MOVE_UP		&mkp MB5	&mkp LCLK			&mkp MCLK		&mkp RCLK			&kp LCRTL			&none
+&trans	&mmv MOVE_LEFT		&mmv MOVE_DOWN		&mmv MOVE_UP	&mmv MOVE_RIGHT		&none		&none							&none				&none		&mmv MOVE_LEFT		&mmv MOVE_UP	&mmv MOVE_DOWN		&mmv MOVE_RIGHT		&none
 &trans	&mwh SCROLL_LEFT	&mwh SCROLL_DOWN	&mwh SCROLL_UP	&mwh SCROLL_RIGHT	&none		&mmv MOVE_LEFT	&none	&none	&mmv MOVE_LEFT		&none		&mwh SCROLL_LEFT	&mwh SCROLL_UP	&mwh SCROLL_DOWN	&mwh SCROLL_RIGHT	&none
 &trans	&trans				&trans				&trans			&trans				&trans		&mmv MOVE_DOWN	&none	&none	&mmv MOVE_DOWN		&trans		&trans				&trans			&trans				&trans				&trans
 			>;
