@@ -64,13 +64,13 @@
 		};
 		combo_lay_left2 {
 			timeout-ms = <100>;
-			key-positions = <46 62>;
+			key-positions = <47 62>;
 			bindings = <&mo MOUSE>;
 			slow-release;
 		};
 		combo_lay_right2 {
 			timeout-ms = <100>;
-			key-positions = <53 69>;
+			key-positions = <52 69>;
 			bindings = <&mo MOUSE>;
 			slow-release;
 		};
