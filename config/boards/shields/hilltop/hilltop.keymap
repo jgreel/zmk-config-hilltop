@@ -54,14 +54,14 @@
 			timeout-ms = <100>;
 			key-positions = <18 63>;
 			bindings = <&mo MOUSE>;
-			require-prior-idle-ms = <250>:
+			require-prior-idle-ms = <250>;
 			slow-release;
 		};
 		combo_mouselay_right {
 			timeout-ms = <100>;
 			key-positions = <23 68>;
 			bindings = <&mo MOUSE>;
-			require-prior-idle-ms = <250>:
+			require-prior-idle-ms = <250>;
 			slow-release;
 		};
 	};
