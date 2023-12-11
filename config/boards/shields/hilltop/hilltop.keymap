@@ -52,14 +52,14 @@
         };
 		combo_mouselay_left {
 			timeout-ms = <100>;
-			key-positions = <18 63>;
+			key-positions = <32 63>;
 			bindings = <&mo MOUSE>;
 			require-prior-idle-ms = <250>;
 			slow-release;
 		};
 		combo_mouselay_right {
 			timeout-ms = <100>;
-			key-positions = <23 68>;
+			key-positions = <37 68>;
 			bindings = <&mo MOUSE>;
 			require-prior-idle-ms = <250>;
 			slow-release;
