@@ -53,14 +53,14 @@
 		combo_mouselay_left {
 			timeout-ms = <100>;
 			key-positions = <32 63>;
-			bindings = <&mo MOUSE>;
+			bindings = <&tog MOUSE>;
 			require-prior-idle-ms = <250>;
 			slow-release;
 		};
 		combo_mouselay_right {
 			timeout-ms = <100>;
 			key-positions = <37 68>;
-			bindings = <&mo MOUSE>;
+			bindings = <&tog MOUSE>;
 			require-prior-idle-ms = <250>;
 			slow-release;
 		};
@@ -116,7 +116,7 @@
 &trans	&mmv MOVE_LEFT		&mmv MOVE_DOWN		&mmv MOVE_UP	&mmv MOVE_RIGHT		&none		&mmv MOVE_UP					&mmv MOVE_UP		&none		&mmv MOVE_LEFT		&mmv MOVE_UP	&mmv MOVE_DOWN		&mmv MOVE_RIGHT		&none
 &trans	&mkp MB4			&mkp RCLK			&mkp MCLK		&mkp LCLK			&mkp MB5	&none							&none				&mkp MB4	&mkp LCLK			&mkp MCLK		&mkp RCLK			&mkp MB5			&kp RSHFT
 &trans	&mwh SCROLL_LEFT	&mwh SCROLL_DOWN	&mwh SCROLL_UP	&mwh SCROLL_RIGHT	&none		&mmv MOVE_LEFT	&none	&none	&mmv MOVE_LEFT		&none		&mwh SCROLL_LEFT	&mwh SCROLL_UP	&mwh SCROLL_DOWN	&mwh SCROLL_RIGHT	&kp RCTRL
-&trans	&trans				&trans				&trans			&trans				&trans		&mmv MOVE_DOWN	&none	&none	&mmv MOVE_DOWN		&trans		&trans				&trans			&trans				&trans				&trans
+&trans	&trans				&trans				&trans			&trans				&to ALPHA	&mmv MOVE_DOWN	&none	&none	&mmv MOVE_DOWN		&to ALPHA	&trans				&trans			&trans				&trans				&trans
 			>;
 		};
 
