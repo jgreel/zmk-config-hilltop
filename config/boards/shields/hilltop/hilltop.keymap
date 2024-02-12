@@ -8,8 +8,6 @@
 #define SYM 2
 #define NUM 3
 
-// #include "mouse.dtsi"
-
 / {
 	behaviors {
 		ht_tp: hold_tap_tap_preferred {
@@ -45,26 +43,21 @@
             key-positions = <56 57>;
             bindings = <&kp RBKT>;
         };
-		combo_alpha {
+		combo_mouse {
             timeout-ms = <50>;
             key-positions = <63 68>;
-            bindings = <&to ALPHA>;
+            bindings = <&to MOUSE>;
+			require-prior-idle-ms = <250>;
         };
-		combo_mouselay_left {
+		combo_mouse_left {
 			timeout-ms = <100>;
 			key-positions = <32 63>;
 			bindings = <&to MOUSE>;
 			require-prior-idle-ms = <250>;
 		};
-		combo_mouselay_right {
+		combo_mouse_right {
 			timeout-ms = <100>;
 			key-positions = <37 68>;
-			bindings = <&to MOUSE>;
-			require-prior-idle-ms = <250>;
-		};
-		combo_mouselay_center {
-			timeout-ms = <100>;
-			key-positions = <65 66>;
 			bindings = <&to MOUSE>;
 			require-prior-idle-ms = <250>;
 		};
