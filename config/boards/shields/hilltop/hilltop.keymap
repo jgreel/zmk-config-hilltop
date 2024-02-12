@@ -53,13 +53,19 @@
 		combo_mouselay_left {
 			timeout-ms = <100>;
 			key-positions = <32 63>;
-			bindings = <&tog MOUSE>;
+			bindings = <&to MOUSE>;
 			require-prior-idle-ms = <250>;
 		};
 		combo_mouselay_right {
 			timeout-ms = <100>;
 			key-positions = <37 68>;
-			bindings = <&tog MOUSE>;
+			bindings = <&to MOUSE>;
+			require-prior-idle-ms = <250>;
+		};
+		combo_mouselay_center {
+			timeout-ms = <100>;
+			key-positions = <65 66>;
+			bindings = <&to MOUSE>;
 			require-prior-idle-ms = <250>;
 		};
 	};
