@@ -9,7 +9,7 @@ manifest:
   projects:
     - name: zmk
       remote: urob
-      revision: mouse-3.2
+      revision: upstream-mouse
       import: app/west.yml
   self:
     path: config
