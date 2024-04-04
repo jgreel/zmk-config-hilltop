@@ -16,6 +16,7 @@
   
 &msc {
     acceleration-exponent = <0>;
+	time-to-max-speed-ms = <0>;
 };
 
 #define U_MOUSE_MOVE_MAX 750
