@@ -67,6 +67,34 @@
 			quick-tap-ms = <150>;
 			bindings = <&mo>, <&to>;
 		};
+
+                scrlupctrlc: scrlupctrlc {
+                        compatible = "zmk,behavior-mod-morph";
+                        #binding-cells = <0>;
+                        bindings = <&msc SCRL_UP>, <&kp LC(C)>;
+                        mods = <(MOD_LCTRL)>;
+                };
+ 
+                scrlrtctrlv: scrlrtctrlv {
+                        compatible = "zmk,behavior-mod-morph";
+                        #binding-cells = <0>;
+                        bindings = <&msc SCRL_RIGHT>, <&kp LC(V)>;
+                        mods = <(MOD_LCTRL)>;
+                };
+
+                scrllftctrlz: scrllftctrlz {
+                        compatible = "zmk,behavior-mod-morph";
+                        #binding-cells = <0>;
+                        bindings = <&msc SCRL_LEFT>, <&kp LC(Z)>;
+                        mods = <(MOD_LCTRL)>;
+                };
+
+                scrldnctrlx: scrldnctrlx {
+                        compatible = "zmk,behavior-mod-morph";
+                        #binding-cells = <0>;
+                        bindings = <&msc SCRL_DOWN>, <&kp LC(X)>;
+                        mods = <(MOD_LCTRL)>;
+                };
     };
 
 	combos {
@@ -114,8 +142,8 @@
 &none			&kp F1		&kp F2		&kp F3			&kp F4		&kp F5			&mmv MOVE_RIGHT					&mmv MOVE_RIGHT	&kp F6			&kp F7		&kp F8			&kp F9		&kp F10		&kp F11
 &kp TAB			&mmv MOVE_LEFT	&mmv MOVE_DOWN	&mmv MOVE_UP		&mmv MOVE_RIGHT	&none			&mmv MOVE_UP					&mmv MOVE_UP	&none			&mmv MOVE_LEFT	&mmv MOVE_UP		&mmv MOVE_DOWN	&mmv MOVE_RIGHT	&kp F12
 &ht_bal LSHFT CAPS	&mkp MB4	&mkp RCLK	&mkp MCLK		&mkp LCLK	&mkp MB5		&none						&none		&mkp MB4		&mkp LCLK	&mkp MCLK		&mkp RCLK	&mkp MB5	&kp RSHFT
-&kp LCTRL		&msc SCRL_LEFT	&msc SCRL_DOWN	&msc SCRL_UP		&msc SCRL_RIGHT	&none			&mmv MOVE_LEFT		&mo SYM	&mo SYM		&mmv MOVE_LEFT	&none			&msc SCRL_LEFT	&msc SCRL_UP		&msc SCRL_DOWN	&msc SCRL_RIGHT	&kp RCTRL
-&kp LGUI		&kp LCTRL	&kp LALT	&ht_tp ENTER ESC	&kp DEL		&ht_moto ALPHA ALPHA	&mmv MOVE_DOWN		&mo NUM	&mo NUM		&mmv MOVE_DOWN	&ht_moto ALPHA ALPHA	&kp BSPC	&ht_tp ESC ENTER	&kp RALT	&kp RCTRL	&kp RGUI
+&kp LCTRL		&scrllftctrlz	&scrldnctrlx	&scrlupctrlc		&scrlrtctrlv	&none			&mmv MOVE_LEFT		&mo SYM	&mo SYM		&mmv MOVE_LEFT	&none			&msc SCRL_LEFT	&msc SCRL_UP		&msc SCRL_DOWN	&msc SCRL_RIGHT	&kp RCTRL
+&kp LGUI		&kp RCTRL	&kp LALT	&ht_tp ENTER ESC	&kp DEL		&ht_moto ALPHA ALPHA	&mmv MOVE_DOWN		&mo NUM	&mo NUM		&mmv MOVE_DOWN	&ht_moto ALPHA ALPHA	&kp BSPC	&ht_tp ESC ENTER	&kp RALT	&kp LCTRL	&kp RGUI
 			>;
 		};
 
