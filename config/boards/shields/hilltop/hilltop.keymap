@@ -72,28 +72,28 @@
                         compatible = "zmk,behavior-mod-morph";
                         #binding-cells = <0>;
                         bindings = <&msc SCRL_UP>, <&kp LC(C)>;
-                        mods = <(MOD_LCTRL)>;
+                        mods = <(MOD_LCTL)>;
                 };
  
                 scrlrtctrlv: scrlrtctrlv {
                         compatible = "zmk,behavior-mod-morph";
                         #binding-cells = <0>;
                         bindings = <&msc SCRL_RIGHT>, <&kp LC(V)>;
-                        mods = <(MOD_LCTRL)>;
+                        mods = <(MOD_LCTL)>;
                 };
 
                 scrllftctrlz: scrllftctrlz {
                         compatible = "zmk,behavior-mod-morph";
                         #binding-cells = <0>;
                         bindings = <&msc SCRL_LEFT>, <&kp LC(Z)>;
-                        mods = <(MOD_LCTRL)>;
+                        mods = <(MOD_LCTL)>;
                 };
 
                 scrldnctrlx: scrldnctrlx {
                         compatible = "zmk,behavior-mod-morph";
                         #binding-cells = <0>;
                         bindings = <&msc SCRL_DOWN>, <&kp LC(X)>;
-                        mods = <(MOD_LCTRL)>;
+                        mods = <(MOD_LCTL)>;
                 };
     };
 
