@@ -148,74 +148,74 @@
 
 	keymap {
 		compatible = "zmk,keymap";
-// | SW0	| SW1	| SW2	| SW3	| SW4	| SW5	| SW6 5WR	|			| SW7 5WR	| SW8	| SW9	| SW10	| SW11	| SW12	| SW13	|
-// | SW14	| SW15	| SW16	| SW17	| SW18	| SW19	| SW20 5WU	|			| SW21 5WU	| SW22	| SW23	| SW24	| SW25	| SW26	| SW27	|
-// | SW28	| SW29	| SW30	| SW31	| SW32	| SW33	| SW34 5WC	|			| SW35 5WC	| SW36	| SW37	| SW38	| SW39	| SW40	| SW41	|
-// | SW42	| SW43	| SW44	| SW45	| SW46	| SW47	| SW48 5WL	| SW49	|	| SW50	| SW51 5WL	| SW52	| SW53	| SW54	| SW55	| SW56	| SW57	|
-// | SW58	| SW59	| SW60	| SW61	| SW62	| SW63	| SW64 5WD	| SW65	|	| SW66	| SW67 5WD	| SW68	| SW69	| SW70	| SW71	| SW72	| SW73	|
+// | SW0		| SW1			| SW2			| SW3			| SW4			| SW5			| SW6 5WR		|				| SW7 5WR		| SW8			| SW9			| SW10			| SW11			| SW12			| SW13		|
+// | SW14		| SW15			| SW16			| SW17			| SW18			| SW19			| SW20 5WU		|				| SW21 5WU		| SW22			| SW23			| SW24			| SW25			| SW26			| SW27		|
+// | SW28		| SW29			| SW30			| SW31			| SW32			| SW33			| SW34 5WC		|				| SW35 5WC		| SW36			| SW37			| SW38			| SW39			| SW40			| SW41		|
+// | SW42		| SW43			| SW44			| SW45			| SW46			| SW47			| SW48 5WL		| SW49	|	| SW50		| SW51 5WL		| SW52			| SW53			| SW54			| SW55			| SW56			| SW57		|
+// | SW58		| SW59			| SW60			| SW61			| SW62			| SW63			| SW64 5WD		| SW65	|	| SW66		| SW67 5WD		| SW68			| SW69			| SW70			| SW71			| SW72			| SW73		|
 
 		mouse_layer {
 			bindings = <	
-&none			&ht_tp F1 N1	&ht_tp F2 N2	&ht_tp F3 N3		&ht_tp F4 N4	&ht_tp F5 N5		&mmv MOVE_RIGHT						&mmv MOVE_RIGHT	&ht_tp F6 N6		&ht_tp F7 N7	&ht_tp F8 N8		&ht_tp F9 N9	&ht_tp F10 N0	&kp F11
-&kp TAB			&none		&none		&kp LC(LA(M))		&kp LC(M)	&none			&mmv MOVE_UP						&mmv MOVE_UP	&none			&mmv LC(M)	&kp LC(LA(M))		&none		&none		&kp F12
-&ht_bal LSHFT CAPS	&mkp MB4	&mkp RCLK	&mkp MCLK		&mkp LCLK	&mkp MB5		&none							&none		&mkp MB4		&mkp LCLK	&mkp MCLK		&mkp RCLK	&mkp MB5	&kp RSHFT
-&kp LCTRL		&scrllftctrlz	&scrldnctrlx	&scrlupctrlc		&scrlrtctrlv	&none			&mmv MOVE_LEFT		&mo CNTR	&mo CNTR	&mmv MOVE_LEFT	&none			&msc SCRL_LEFT	&msc SCRL_UP		&msc SCRL_DOWN	&msc SCRL_RIGHT	&kp RCTRL
-&kp LGUI		&kp RCTRL	&kp LALT	&ht_tp ENTER ESC	&kp DEL		&ht_moto ALPHA ALPHA	&mmv MOVE_DOWN		&mo NUM		&mo NUM		&mmv MOVE_DOWN	&ht_moto ALPHA ALPHA	&kp BSPC	&ht_tp ESC ENTER	&kp RALT	&kp LCTRL	&kp RGUI
+&none			&ht_tp F1 N1		&ht_tp F2 N2		&ht_tp F3 N3		&ht_tp F4 N4		&ht_tp F5 N5		&mmv MOVE_RIGHT						&mmv MOVE_RIGHT		&ht_tp F6 N6		&ht_tp F7 N7		&ht_tp F8 N8		&ht_tp F9 N9		&ht_tp F10 N0		&kp F11
+&kp TAB			&none			&none			&kp LC(LA(M))		&kp LC(M)		&none			&mmv MOVE_UP						&mmv MOVE_UP		&none			&mmv LC(M)		&kp LC(LA(M))		&none			&none			&kp F12
+&ht_bal LSHFT CAPS	&mkp MB4		&mkp RCLK		&mkp MCLK		&mkp LCLK		&mkp MB5		&none							&none			&mkp MB4		&mkp LCLK		&mkp MCLK		&mkp RCLK		&mkp MB5		&kp RSHFT
+&kp LCTRL		&scrllftctrlz		&scrldnctrlx		&scrlupctrlc		&scrlrtctrlv		&none			&mmv MOVE_LEFT		&mo CNTR	&mo CNTR	&mmv MOVE_LEFT		&none			&msc SCRL_LEFT		&msc SCRL_UP		&msc SCRL_DOWN		&msc SCRL_RIGHT		&kp RCTRL
+&kp LGUI		&kp RCTRL		&kp LALT		&ht_tp ENTER ESC	&kp DEL			&ht_moto ALPHA ALPHA	&mmv MOVE_DOWN		&mo NUM		&mo NUM		&mmv MOVE_DOWN		&ht_moto ALPHA ALPHA	&kp BSPC		&ht_tp ESC ENTER	&kp RALT		&kp LCTRL		&kp RGUI
 			>;
 		};
 
 		alpha_layer {
-// |   `	| 1/F1	| 2/F2	| 3/F3	| 4/F4	| 5/F5			| RIGHT		|		| END		| 6/F6			| 7/F7	| 8/F8		| 9/F9	| 0/F10		| -/F11		|
-// | TAB	|  Q	|  W	|  E	|  R	|  T			| UP		|		| PGUP		|  Y			|  U	|  I		|  O	|   P		| =/F12		|
-// | SHFT/CPS	|  A	|  S	|  D	|  F	|  G			| 		|		| 		|  H			|  J	|  K		|  L	|   ;		|  '		|
-// | LCTRL	|  Z	|  X	|  C	|  V	|  B			| LEFT		| CNTR	| CNTR	| HOME		|  N			|  M	|  ,		|  .	|   /		|  \		|
-// | WIN	| LCTRL	| LALT	|ESC/EN	| DEL	| SP/SHFT		| DOWN		| NUM	| NUM	| PGDN		| SP/SHFT		| BKSPC	|ENT/ES		| RALT	| RCTRL		| WIN		|
-			bindings = <		
-&kp GRAVE	&trans	&trans	&trans	&trans	&trans			&kp RIGHT			&kp END		&trans			&trans	&trans		&trans	&trans		&ht_tp F11 MINUS
-&trans		&kp Q	&kp W	&kp E	&kp R	&kp T			&kp UP				&kp PG_UP	&kp Y			&kp U	&kp I		&kp O	&kp P		&ht_tp F12 EQUAL
-&trans		&kp A	&kp S	&kp D	&kp F	&kp G			&none				&none		&kp H			&kp J	&kp K		&kp L	&kp SEMI	&kp SQT
-&trans		&kp Z	&kp X	&kp C	&kp V	&kp B			&kp LEFT	&trans	&trans	&kp HOME	&kp N			&kp M	&kp COMMA	&kp DOT	&kp FSLH	&kp BSLH
-&trans		&trans	&trans	&trans	&trans	&ht_lay SHFTL SPACE	&kp DOWN	&trans	&trans	&kp PG_DN	&ht_lay SHFTL SPACE	&trans	&trans		&trans	&kp RCTRL	&kp RGUI
+// |   `		| 1/F1			| 2/F2			| 3/F3			| 4/F4			| 5/F5			| RIGHT			|				| END			| 6/F6			| 7/F7			| 8/F8			| 9/F9			| 0/F10			| -/F11		|
+// | TAB		|  Q			|  W			|  E			|  R			|  T			| UP			|				| PGUP			|  Y			|  U			|  I			|  O			|   P			| =/F12		|
+// | SHFT/CPS		|  A			|  S			|  D			|  F			|  G			| 			|				| 			|  H			|  J			|  K			|  L			|   ;			|  '		|
+// | LCTRL		|  Z			|  X			|  C			|  V			|  B			| LEFT			| CNTR		| CNTR		| HOME			|  N			|  M			|  ,			|  .			|   /			|  \		|
+// | WIN		| RCTRL			| LALT			|ESC/EN			| DEL			| SP/SHFT		| DOWN			| NUM		| NUM		| PGDN			| SP/SHFT		| BKSPC			|ENT/ES			| RALT			| RCTRL			| WIN		|
+						bindings		 = <																
+&kp GRAVE		&trans			&trans			&trans			&trans			&trans			&kp RIGHT						&kp END			&trans			&trans			&trans			&trans			&trans			&ht_tp F11 MINUS
+&trans			&kp Q			&kp W			&kp E			&kp R			&kp T			&kp UP							&kp PG_UP		&kp Y			&kp U			&kp I			&kp O			&kp P			&ht_tp F12 EQUAL
+&trans			&kp A			&kp S			&kp D			&kp F			&kp G			&none							&none			&kp H			&kp J			&kp K			&kp L			&kp SEMI		&kp SQT
+&trans			&kp Z			&kp X			&kp C			&kp V			&kp B			&kp LEFT		&trans		&trans		&kp HOME		&kp N			&kp M			&kp COMMA		&kp DOT			&kp FSLH		&kp BSLH
+&trans			&trans			&trans			&trans			&trans			&ht_lay SHFTL SPACE	&kp DOWN		&trans		&trans		&kp PG_DN		&ht_lay SHFTL SPACE	&trans			&trans			&trans			&kp RCTRL		&kp RGUI
 			>;
 		};
 
 		shift_layer {
 			bindings = <
-&kp TILDE	&kp EXCL	&kp AT		&kp HASH	&kp DOLLAR	&kp PRCNT	&kp END				&kp RIGHT	&kp CARET	&kp AMPS	&kp ASTERISK	&kp LPAR	&kp RPAR	&kp UNDER
-&kp LS(TAB)	&kp LS(Q)	&kp LS(W)	&kp LS(E)	&kp LS(R)	&kp LS(T)	&kp PG_UP			&kp UP		&kp LS(Y)	&kp LS(U)	&kp LS(I)	&kp LS(O)	&kp LS(P)	&kp PLUS
-&kp CAPS	&kp LS(A)	&kp LS(S)	&kp LS(D)	&kp LS(F)	&kp LS(G)	&none				&none		&kp LS(H)	&kp LS(J)	&kp LS(K)	&kp LS(L)	&kp COLON	&kp DQT
-&kp LS(LCTRL)	&kp LS(Z)	&kp LS(X)	&kp LS(C)	&kp LS(V)	&kp LS(B)	&kp HOME	&trans	&trans	&kp LEFT	&kp LS(N)	&kp LS(M)	&kp LT		&kp GT		&kp QMARK	&kp PIPE
-&kp LS(LGUI)	&kp LS(RCTRL)	&kp LS(LALT)	&kp ENTER	&kp BSPC	&kp SPACE	&kp PG_DN	&trans	&trans	&kp DOWN	&kp SPACE	&kp DEL		&kp ESC		&kp LS(RALT)	&kp LS(RCTRL)	&kp LS(RGUI)
+&kp TILDE		&kp EXCL		&kp AT			&kp HASH		&kp DOLLAR		&kp PRCNT		&kp END							&kp RIGHT		&kp CARET		&kp AMPS		&kp ASTERISK		&kp LPAR		&kp RPAR		&kp UNDER
+&kp LS(TAB)		&kp LS(Q)		&kp LS(W)		&kp LS(E)		&kp LS(R)		&kp LS(T)		&kp PG_UP						&kp UP			&kp LS(Y)		&kp LS(U)		&kp LS(I)		&kp LS(O)		&kp LS(P)		&kp PLUS
+&kp CAPS		&kp LS(A)		&kp LS(S)		&kp LS(D)		&kp LS(F)		&kp LS(G)		&none							&none			&kp LS(H)		&kp LS(J)		&kp LS(K)		&kp LS(L)		&kp COLON		&kp DQT
+&kp LS(LCTRL)		&kp LS(Z)		&kp LS(X)		&kp LS(C)		&kp LS(V)		&kp LS(B)		&kp HOME		&trans		&trans		&kp LEFT		&kp LS(N)		&kp LS(M)		&kp LT			&kp GT			&kp QMARK		&kp PIPE
+&kp LS(LGUI)		&kp LS(RCTRL)		&kp LS(LALT)		&kp ENTER		&kp BSPC		&kp SPACE		&kp PG_DN		&trans		&trans		&kp DOWN		&kp SPACE		&kp DEL			&kp ESC			&kp LS(RALT)		&kp LS(RCTRL)		&kp LS(RGUI)
 			>;
 		};
 
 		mirror_layer {
 			bindings = <
-&ht_tp F11 MINUS	&ht_tp F10 N0	&ht_tp F9 N9	&ht_tp F8 N8	&ht_tp F7 N7	&ht_tp F6 N6		&kp END				&kp RIGHT	&ht_tp F5 N5		&ht_tp F4 N4	&ht_tp F3 N3	&ht_tp F2 N2	&ht_tp F1 N1	&kp GRAVE
-&ht_tp F12 EQUAL	&kp P		&kp O		&kp I		&kp U		&kp Y			&kp PG_UP			&kp UP		&kp T			&kp R		&kp E		&kp W		&kp Q		&kp TAB
-&kp SQT			&kp SEMI	&kp L		&kp K		&kp J		&kp H			&none				&none		&kp G			&kp F		&kp D		&kp S		&kp A		&ht_bal LSHFT CAPS
-&kp BSLH		&kp FSLH	&kp DOT		&kp COMMA	&kp M		&kp N			&kp HOME	&trans	&trans	&kp LEFT	&kp B			&kp V		&kp C		&kp X		&kp Z		&kp LCTRL
-&trans			&kp RCTRL	&trans		&trans		&trans		&ht_bal RSHFT SPACE	&kp PG_DN	&trans	&trans	&kp DOWN	&ht_bal LSHFT SPACE	&trans		&trans		&trans		&trans		&trans
+&ht_tp F11 MINUS	&ht_tp F10 N0		&ht_tp F9 N9		&ht_tp F8 N8		&ht_tp F7 N7		&ht_tp F6 N6		&kp END							&kp RIGHT		&ht_tp F5 N5		&ht_tp F4 N4		&ht_tp F3 N3		&ht_tp F2 N2		&ht_tp F1 N1		&kp GRAVE
+&ht_tp F12 EQUAL	&kp P			&kp O			&kp I			&kp U			&kp Y			&kp PG_UP						&kp UP			&kp T			&kp R			&kp E			&kp W			&kp Q			&kp TAB
+&kp SQT			&kp SEMI		&kp L			&kp K			&kp J			&kp H			&none							&none			&kp G			&kp F			&kp D			&kp S			&kp A			&ht_bal LSHFT CAPS
+&kp BSLH		&kp FSLH		&kp DOT			&kp COMMA		&kp M			&kp N			&kp HOME		&trans		&trans		&kp LEFT		&kp B			&kp V			&kp C			&kp X			&kp Z			&kp LCTRL
+&trans			&kp RCTRL		&trans			&trans			&trans			&ht_bal RSHFT SPACE	&kp PG_DN		&trans		&trans		&kp DOWN		&ht_bal LSHFT SPACE	&trans			&trans			&trans			&trans			&trans
 			>;
 		};
 
 		control_layer {
 			bindings = <
-&bt BT_CLR	&bt BT_SEL 0		&bt BT_SEL 1	&bt BT_SEL 2		&bt BT_SEL 3	&bt BT_SEL 4	&kp END					&kp RIGHT	&none		&none		&none			&none		&none			&none
-&trans		&kp C_PREV		&kp C_VOL_DN	&kp C_PLAY_PAUSE	&kp C_VOL_UP	&kp C_NEXT	&kp PG_UP				&kp UP		&kp C_PREV	&kp C_VOL_DN	&kp C_PLAY_PAUSE	&kp C_VOL_UP	&kp C_NEXT		&none
-&trans		&none			&none		&none			&none		&none		&none					&none		&none		&kp LBKT	&kp RBKT		&kp LBRC	&kp RBRC		&none
-&trans		&kp K_APPLICATION	&kp PRINTSCREEN	&none			&kp INSERT	&none		&kp HOME	&trans	&trans		&kp LEFT	&kp KP_NLCK	&none		&none			&kp PRINTSCREEN	&kp K_APPLICATION	&none
-&trans		&trans			&trans		&trans			&kp BSPC	&trans		&kp PG_DN	&trans	&trans		&kp DOWN	&trans		&kp DEL		&trans			&trans		&trans			&trans
+&bt BT_CLR		&bt BT_SEL 0		&bt BT_SEL 1		&bt BT_SEL 2		&bt BT_SEL 3		&bt BT_SEL 4		&kp END							&kp RIGHT		&none			&none			&none			&none			&none			&none
+&trans			&kp C_PREV		&kp C_VOL_DN		&kp C_PLAY_PAUSE	&kp C_VOL_UP		&kp C_NEXT		&kp PG_UP						&kp UP			&kp C_PREV		&kp C_VOL_DN		&kp C_PLAY_PAUSE	&kp C_VOL_UP		&kp C_NEXT		&none
+&trans			&mkp MB4		&mkp RCLK		&mkp MCLK		&mkp LCLK		&mkp MB5		&none							&none			&mkp MB4		&mkp LCLK		&mkp MCLK		&mkp RCLK		&mkp MB5		&none
+&trans			&kp K_APPLICATION	&kp PRINTSCREEN		&none			&kp INSERT		&none			&kp HOME		&trans		&trans		&kp LEFT		&kp KP_NLCK		&kp LBKT		&kp RBKT		&kp LBRC		&kp RBRC		&none
+&trans			&trans			&trans			&trans			&kp BSPC		&trans			&kp PG_DN		&trans		&trans		&kp DOWN		&trans			&kp DEL			&trans			&trans			&trans			&trans
 			>;
 		};
 
 		numpad_layer {
 			bindings = <
-&kp TILDE	&kp EXCL	&kp AT		&kp HASH	&kp DOLLAR	&kp PRCNT	&kp END						&kp RIGHT	&kp CARET	&kp AMPS	&kp ASTERISK	&kp LPAR	&kp RPAR	&kp UNDER
-&trans		&kp KP_DIVIDE	&kp KP_N7	&kp KP_N8	&kp KP_N9	&kp KP_MINUS	&kp PG_UP					&kp UP		&kp KP_DIVIDE	&kp KP_N7	&kp KP_N8	&kp KP_N9	&kp KP_MINUS	&trans
-&trans		&kp KP_MULTIPLY	&kp KP_N4	&kp KP_N5	&kp KP_N6	&kp KP_PLUS	&none						&none		&kp KP_MULTIPLY	&kp KP_N4	&kp KP_N5	&kp KP_N6	&kp KP_PLUS	&trans
-&trans		&kp COMMA	&kp KP_N1	&kp KP_N2	&kp KP_N3	&kp KP_DOT	&kp HOME	&trans		&trans		&kp LEFT	&kp COMMA	&kp KP_N1	&kp KP_N2	&kp KP_N3	&kp KP_DOT	&trans
-&trans		&trans		&trans		&trans		&trans		&kp KP_N0	&kp PG_DN	&kp SPACE	&kp SPACE	&kp DOWN	&kp KP_N0	&trans		&trans		&trans		&trans		&trans
+&kp TILDE		&kp EXCL		&kp AT			&kp HASH		&kp DOLLAR		&kp PRCNT		&kp END							&kp RIGHT		&kp CARET		&kp AMPS		&kp ASTERISK		&kp LPAR		&kp RPAR		&kp UNDER
+&trans			&kp KP_DIVIDE		&kp KP_N7		&kp KP_N8		&kp KP_N9		&kp KP_MINUS		&kp PG_UP						&kp UP			&kp KP_DIVIDE		&kp KP_N7		&kp KP_N8		&kp KP_N9		&kp KP_MINUS		&trans
+&trans			&kp KP_MULTIPLY		&kp KP_N4		&kp KP_N5		&kp KP_N6		&kp KP_PLUS		&none							&none			&kp KP_MULTIPLY		&kp KP_N4		&kp KP_N5		&kp KP_N6		&kp KP_PLUS		&trans
+&trans			&kp COMMA		&kp KP_N1		&kp KP_N2		&kp KP_N3		&kp KP_DOT		&kp HOME		&trans		&trans		&kp LEFT		&kp COMMA		&kp KP_N1		&kp KP_N2		&kp KP_N3		&kp KP_DOT		&trans
+&trans			&trans			&trans			&trans			&trans			&kp KP_N0		&kp PG_DN		&kp SPACE	&kp SPACE	&kp DOWN		&kp KP_N0		&trans			&trans			&trans			&trans			&trans
 			>;
 		};
 	};
