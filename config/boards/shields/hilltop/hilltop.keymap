@@ -61,7 +61,7 @@
 			bindings = <&kp>, <&kp>;
 		};
 
-		ht_lay: hold_tap_balanced {
+		ht_lay: hold_tap_layer {
 			compatible = "zmk,behavior-hold-tap";
 			#binding-cells = <2>;
 			flavor = "balanced";
