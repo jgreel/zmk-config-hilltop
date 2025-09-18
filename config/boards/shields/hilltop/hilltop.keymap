@@ -5,7 +5,7 @@
 
 #define MOUSE 0
 #define ALPHA 1
-#define SHIFT 2
+#define SHFTL 2
 #define MIRROR 3
 #define CNTR 4
 #define NUM 5
@@ -175,14 +175,14 @@
 &trans		&kp Q	&kp W	&kp E	&kp R	&kp T			&kp UP				&kp PG_UP	&kp Y			&kp U	&kp I		&kp O	&kp P		&ht_tp F12 EQUAL
 &trans		&kp A	&kp S	&kp D	&kp F	&kp G			&none				&none		&kp H			&kp J	&kp K		&kp L	&kp SEMI	&kp SQT
 &trans		&kp Z	&kp X	&kp C	&kp V	&kp B			&kp LEFT	&trans	&trans	&kp HOME	&kp N			&kp M	&kp COMMA	&kp DOT	&kp FSLH	&kp BSLH
-&trans		&trans	&trans	&trans	&trans	&ht_lay SHIFT SPACE	&kp DOWN	&trans	&trans	&kp PG_DN	&ht_lay SHIFT SPACE	&trans	&trans		&trans	&kp RCTRL	&kp RGUI
+&trans		&trans	&trans	&trans	&trans	&ht_lay SHFTL SPACE	&kp DOWN	&trans	&trans	&kp PG_DN	&ht_lay SHFTL SPACE	&trans	&trans		&trans	&kp RCTRL	&kp RGUI
 			>;
 		};
 
 		shift_layer {
 			bindings = <
-&kp TILDE	&trans		&trans		&trans		&trans		&trans		&kp END				&kp RIGHT	&trans		&trans		&trans		&trans		&trans		&ht_tp F11 UNDER
-&kp LS(TAB)	&kp LS(Q)	&kp LS(W)	&kp LS(E)	&kp LS(R)	&kp LS(T)	&kp PG_UP			&kp UP		&kp LS(Y)	&kp LS(U)	&kp LS(I)	&kp LS(O)	&kp LS(P)	&ht_tp F12 PLUS
+&kp TILDE	&kp EXCL	&kp AT		&kp HASH	&kp DOLLAR	&kp PRCNT	&kp END				&kp RIGHT	&kp CARET	&kp AMPS	&kp ASTERISK	&kp LPAR	&kp RPAR	&kp UNDER
+&kp LS(TAB)	&kp LS(Q)	&kp LS(W)	&kp LS(E)	&kp LS(R)	&kp LS(T)	&kp PG_UP			&kp UP		&kp LS(Y)	&kp LS(U)	&kp LS(I)	&kp LS(O)	&kp LS(P)	&kp PLUS
 &kp CAPS	&kp LS(A)	&kp LS(S)	&kp LS(D)	&kp LS(F)	&kp LS(G)	&none				&none		&kp LS(H)	&kp LS(J)	&kp LS(K)	&kp LS(L)	&kp COLON	&kp DQT
 &kp LS(LCTRL)	&kp LS(Z)	&kp LS(X)	&kp LS(C)	&kp LS(V)	&kp LS(B)	&kp HOME	&trans	&trans	&kp LEFT	&kp LS(N)	&kp LS(M)	&kp LT		&kp GT		&kp QMARK	&kp PIPE
 &kp LS(LGUI)	&kp LS(RCTRL)	&kp LS(LALT)	&kp ENTER	&kp BSPC	&kp SPACE	&kp PG_DN	&trans	&trans	&kp DOWN	&kp SPACE	&kp DEL		&kp ESC		&kp LS(RALT)	&kp LS(RCTRL)	&kp LS(RGUI)
