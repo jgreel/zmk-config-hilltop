@@ -81,7 +81,7 @@
 
 		msckp: mod_morph_msc_kp {
 			compatible = "zmk,behavior-mod-morph";
-			#binding-cells = <0>;
+			#binding-cells = <2>;
 			bindings = <&msc>, <&kp>;
 			mods = <(MOD_LCTL)>;
 		};
