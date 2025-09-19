@@ -200,8 +200,8 @@
 			bindings = <
 &kp TILDE		&kp EXCL		&kp AT			&kp HASH		&kp DOLLAR		&kp PRCNT		&kp END							&kp END			&kp CARET		&kp AMPS		&kp ASTERISK		&kp LPAR		&kp RPAR		&kp UNDER
 &trans			&kp KP_DIVIDE		&kp KP_N7		&kp KP_N8		&kp KP_N9		&kp KP_MINUS		&kp PG_UP						&kp PG_UP		&kp KP_DIVIDE		&kp KP_N7		&kp KP_N8		&kp KP_N9		&kp KP_MINUS		&kp EQUAL
-&trans			&kp KP_MULTIPLY		&kp KP_N4		&kp KP_N5		&kp KP_N6		&kp KP_PLUS		&none							&none			&kp KP_MULTIPLY		&kp KP_N4		&kp KP_N5		&kp KP_N6		&kp KP_PLUS		&kp 
-&trans			&kp COMMA		&kp KP_N1		&kp KP_N2		&kp KP_N3		&kp KP_DOT		&kp HOME		&trans		&trans		&kp HOME		&kp COMMA		&kp KP_N1		&kp KP_N2		&kp KP_N3		&kp KP_DOT		&kp 
+&kp KP_N0		&kp KP_MULTIPLY		&kp KP_N4		&kp KP_N5		&kp KP_N6		&kp KP_PLUS		&none							&none			&kp KP_MULTIPLY		&kp KP_N4		&kp KP_N5		&kp KP_N6		&kp KP_PLUS		&kp KP_N0
+&kp KP_N0		&kp COMMA		&kp KP_N1		&kp KP_N2		&kp KP_N3		&kp KP_DOT		&kp HOME		&trans		&trans		&kp HOME		&kp COMMA		&kp KP_N1		&kp KP_N2		&kp KP_N3		&kp KP_DOT		&kp KP_N0
 &trans			&trans			&trans			&trans			&trans			&kp KP_N0		&kp PG_DN		&kp SPACE	&kp SPACE	&kp PG_DN		&kp KP_N0		&trans			&trans			&trans			&trans			&trans
 			>;
 		};
