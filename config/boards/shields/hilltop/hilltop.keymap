@@ -79,40 +79,30 @@
 			bindings = <&mo>, <&to>;
 		};
 
-		msckp: mod_morph_msc_kp {
+		scrlupctrlc: scrlupctrlc {
 			compatible = "zmk,behavior-mod-morph";
-			#binding-cells = <2>;
-			bindings = <&msc>, <&kp>;
+			#binding-cells = <0>;
+			bindings = <&msc SCRL_UP>, <&kp LC(C)>;
 			mods = <(MOD_LCTL)>;
 		};
-//
-//		scrlupctrlc: scrlupctrlc {
-//			compatible = "zmk,behavior-mod-morph";
-//			#binding-cells = <0>;
-//			bindings = <&msc SCRL_UP>, <&kp LC(C)>;
-//			mods = <(MOD_LCTL)>;
-//		};
-
-//		scrlrtctrlv: scrlrtctrlv {
-//			compatible = "zmk,behavior-mod-morph";
-//			#binding-cells = <0>;
-//			bindings = <&msc SCRL_RIGHT>, <&kp LC(V)>;
-//			mods = <(MOD_LCTL)>;
-//		};
-
-//		scrllftctrlz: scrllftctrlz {
-//			compatible = "zmk,behavior-mod-morph";
-//			#binding-cells = <0>;
-//			bindings = <&msc SCRL_LEFT>, <&kp LC(Z)>;
-//			mods = <(MOD_LCTL)>;
-//		};
-
-//		scrldnctrlx: scrldnctrlx {
-//			compatible = "zmk,behavior-mod-morph";
-//			#binding-cells = <0>;
-//			bindings = <&msc SCRL_DOWN>, <&kp LC(X)>;
-//			mods = <(MOD_LCTL)>;
-//		};
+		scrlrtctrlv: scrlrtctrlv {
+			compatible = "zmk,behavior-mod-morph";
+			#binding-cells = <0>;
+			bindings = <&msc SCRL_RIGHT>, <&kp LC(V)>;
+			mods = <(MOD_LCTL)>;
+		};
+		scrllftctrlz: scrllftctrlz {
+			compatible = "zmk,behavior-mod-morph";
+			#binding-cells = <0>;
+			bindings = <&msc SCRL_LEFT>, <&kp LC(Z)>;
+			mods = <(MOD_LCTL)>;
+		};
+		scrldnctrlx: scrldnctrlx {
+			compatible = "zmk,behavior-mod-morph";
+			#binding-cells = <0>;
+			bindings = <&msc SCRL_DOWN>, <&kp LC(X)>;
+			mods = <(MOD_LCTL)>;
+		};
     };
 
 	combos {
@@ -156,7 +146,7 @@
 &none			&ht_tp F1 N1		&ht_tp F2 N2		&ht_tp F3 N3		&ht_tp F4 N4		&ht_tp F5 N5		&kp RIGHT						&kp RIGHT		&ht_tp F6 N6		&ht_tp F7 N7		&ht_tp F8 N8		&ht_tp F9 N9		&ht_tp F10 N0		&kp F11
 &kp TAB			&none			&none			&kp LC(LA(M))		&kp LC(M)		&none			&kp UP							&kp UP			&none			&kp LC(M)		&kp LC(LA(M))		&none			&none			&kp F12
 &ht_bal LSHFT CAPS	&mkp MB4		&mkp RCLK		&mkp MCLK		&mkp LCLK		&mkp MB5		&none							&none			&mkp MB4		&mkp LCLK		&mkp MCLK		&mkp RCLK		&mkp MB5		&kp RSHFT
-&kp LCTRL		&msckp SCRL_LEFT LC(Z)	&msckp SCRL_DOWN LC(X)	&msckp SCRL_UP LC(C)	&msckp SCRL_RIGHT LC(V)	&none			&kp LEFT		&mo CMND	&mo CMND	&kp LEFT		&none			&msckp SCRL_LEFT LC(V)	&msckp SCRL_UP LC(C)	&msckp SCRL_DOWN LC(X)	&msckp SCRL_RIGHT LC(Z)	&kp LCTRL
+&kp LCTRL		&scrllftctrlz		&scrldnctrlx		&scrlupctrlc		&scrlrtctrlv		&none			&kp LEFT		&mo CMND	&mo CMND	&kp LEFT		&none			&msc SCRL_LEFT		&msc SCRL_UP		&msc SCRL_DOWN		&msc SCRL_RIGHT		&kp LCTRL
 &kp LGUI		&kp RCTRL		&kp LALT		&ht_tp ENTER ESC	&kp DEL			&ht_moto ALPHA ALPHA	&kp DOWN		&mo NUM		&mo NUM		&kp DOWN		&ht_moto ALPHA ALPHA	&kp BSPC		&ht_tp ESC ENTER	&kp RALT		&kp RCTRL		&kp RGUI
 			>;
 		};
