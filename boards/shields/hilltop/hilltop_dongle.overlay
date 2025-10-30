@@ -38,8 +38,8 @@
         sleep;
         //no-secondary-tap;
         //no-taps;
-        x-axis-z-min = 5; //default 5
-        y-axis-z-min = 4; // default 4
+        //x-axis-z-min = 5; //default 5, malformed value error
+        //y-axis-z-min = 4; // default 4, malformed value error
         
     };
 };
