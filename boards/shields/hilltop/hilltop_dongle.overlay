@@ -17,7 +17,7 @@
         status = "okay";
         device = <&glidepoint>;
         input-processors
-            = <&zip_temp_layer 5 2000>
+            = <&zip_temp_layer 0 2000>
             //, <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT)>
             ;
     };
