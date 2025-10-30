@@ -15,5 +15,8 @@ manifest:
     - name: zmk
       remote: zmkfirmware
       import: app/west.yml
+    - name: cirque-input-module
+      remote: petejohanson
+      revision: main
   self:
     path: config
