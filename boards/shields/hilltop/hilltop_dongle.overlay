@@ -17,8 +17,8 @@
         status = "okay";
         device = <&glidepoint>;
         input-processors
-            = <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT)>
-            , <&zip_temp_layer 0 2000>
+            = <&zip_temp_layer MOUSE 2000>
+            //, <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT)>
             ;
     };
 };
@@ -32,11 +32,11 @@
         status = "okay";
         dr-gpios = <&xiao_d 3 (GPIO_ACTIVE_HIGH)>;
 
-        sensitivity = "4x"; //1x, 2x, 3x, 4x
+        sensitivity = "2x"; //1x, 2x, 3x, 4x
         //rotate-90;
-        //x-invert;
+        x-invert;
         //y-invert;
-        sleep;
+        //sleep;
         //no-secondary-tap;
         //no-taps;
         //x-axis-z-min = 5; //default 5, malformed value error
