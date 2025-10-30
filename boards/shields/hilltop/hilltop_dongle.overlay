@@ -29,7 +29,7 @@
         compatible = "cirque,pinnacle";
         reg = <0x2A>;
         status = "okay";
-        dr-gpios = <&xiao_d D3 (GPIO_ACTIVE_HIGH)>;
+        dr-gpios = <&xiao_d 3 (GPIO_ACTIVE_HIGH)>;
 
         sensitivity = "4x"; //1x, 2x, 3x, 4x
         //rotate-90;
