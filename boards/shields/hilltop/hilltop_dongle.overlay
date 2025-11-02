@@ -17,7 +17,7 @@
         status = "okay";
         device = <&glidepoint>;
         input-processors
-            = <&zip_temp_layer 5 2000>
+            = <&zip_temp_layer 5 100>
             //, <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT)>
             ;
     };
@@ -37,7 +37,7 @@
         x-invert;
         //y-invert;
         //sleep;
-        //no-secondary-tap;
+        no-secondary-tap;
         //no-taps;
         //x-axis-z-min = 5; //default 5, malformed value error
         //y-axis-z-min = 4; // default 4, malformed value error
