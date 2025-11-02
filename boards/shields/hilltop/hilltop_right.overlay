@@ -1,5 +1,5 @@
 #include "hilltop.dtsi"
-#include "split_inputs.dtsi"
+//#include "split_inputs.dtsi"
 
 &default_transform {
 	col-offset = <8>;
