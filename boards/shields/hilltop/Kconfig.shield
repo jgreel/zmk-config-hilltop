@@ -1,7 +1,10 @@
 # No whitespace after the comma or in the keyboard name!
 config SHIELD_HILLTOP_DONGLE
     def_bool $(shields_list_contains,hilltop_dongle)
-    
+
+config SHIELD_HILLTOP_CIRQUEPERIPH
+    def_bool $(shields_list_contains,hilltop_cirqueperiph)
+
 config SHIELD_HILLTOP_LEFT
     def_bool $(shields_list_contains,hilltop_left)
 

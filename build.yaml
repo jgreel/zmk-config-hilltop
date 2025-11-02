@@ -21,6 +21,8 @@
 include:
   - board: seeeduino_xiao_ble
     shield: hilltop_dongle
+  - board: seeeduino_xiao_ble
+    shield: hilltop_cirqueperiph
   - board: nice_nano_v2
     shield: hilltop_left
   - board: nice_nano_v2

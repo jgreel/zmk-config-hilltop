@@ -1,0 +1,36 @@
+#include "hilltop.dtsi"
+
+/ {
+    chosen {
+        zmk,kscan = &mock_kscan;
+    };
+
+    mock_kscan: mock_kscan_0 {
+        compatible = "zmk,kscan-mock";
+        columns = <0>;
+        rows = <0>;
+        events = <0>;
+    };
+};
+
+&xiao_i2c {
+    status = "okay";
+    
+    glidepoint1: glidepoint1@2a {
+        compatible = "cirque,pinnacle";
+        reg = <0x2A>;
+        status = "okay";
+        dr-gpios = <&xiao_d 3 (GPIO_ACTIVE_HIGH)>;
+
+        sensitivity = "2x"; //1x, 2x, 3x, 4x
+        //rotate-90;
+        //x-invert;
+        y-invert;
+        //sleep;
+        no-secondary-tap;
+        //no-taps;
+        //x-axis-z-min = 5; //default 5, malformed value error
+        //y-axis-z-min = 4; // default 4, malformed value error
+        
+    };
+};
