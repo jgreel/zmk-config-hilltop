@@ -37,7 +37,7 @@
 
     glidepoint1_listener: glidepoint1_listener {
         compatible = "zmk,input-listener";
-        status = "disabled";
+        status = "okay";
         device = <&glidepoint1>;
         input-processors
             = <&zip_temp_layer 5 500>
