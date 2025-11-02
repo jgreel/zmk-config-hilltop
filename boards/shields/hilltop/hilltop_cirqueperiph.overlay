@@ -50,9 +50,9 @@
         };
     };
 
-    glidepoint1_listener: glidepoint1_listener {
-        compatible = "zmk,input-listener";
-        status = "disabled";
-        device = <&glidepoint_split>;
-    };
+//    glidepoint1_listener: glidepoint1_listener {
+//        compatible = "zmk,input-listener";
+//        status = "disabled";
+//        device = <&glidepoint_split>;
+//    };
 };
