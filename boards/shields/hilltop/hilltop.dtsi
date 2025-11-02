@@ -28,14 +28,6 @@ RC(4,0) RC(4,1) RC(4,2) RC(4,3) RC(4,4) RC(4,5) RC(4,6) RC(4,7) RC(4,8) RC(4,9) 
 };
 
 / {
-    glidepoint0_listener: glidepoint0_listener {
-        compatible = "zmk,input-listener";
-        status = "disabled";
-		device = <&glidepoint0>;
-    };
-};
-
-/ {
     split_inputs {
         #address-cells = <1>;
         #size-cells = <0>;
