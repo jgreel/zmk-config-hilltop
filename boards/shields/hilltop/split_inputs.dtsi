@@ -9,6 +9,7 @@
         };
     };
 
+/*
     glidepoint0_listener: glidepoint0_listener {
         compatible = "zmk,input-listener";
         status = "disabled";
@@ -18,6 +19,7 @@
             //, <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT)>
             ;
     };
+*/
 
     glidepoint1_listener: glidepoint1_listener {
         compatible = "zmk,input-listener";

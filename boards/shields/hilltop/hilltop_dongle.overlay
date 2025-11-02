@@ -14,6 +14,7 @@
     };
 };
 
+/*
 &xiao_i2c {
     status = "okay";
     
@@ -40,6 +41,7 @@
     status = "okay";
     device = <&glidepoint0>;
 };
+*/
 
 &glidepoint1_listener {
     status = "okay";
