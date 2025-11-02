@@ -34,3 +34,10 @@
         
     };
 };
+
+// Overrides for the input-split child node
+&glidepoint1 {
+    device = <&glidepoint1>;
+    // Optional
+    // input-processors = <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>;
+};
