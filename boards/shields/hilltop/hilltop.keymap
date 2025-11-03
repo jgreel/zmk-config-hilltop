@@ -177,11 +177,11 @@
 
 		shift_layer {
 			bindings = <
-&kp TILDE		&kp EXCL		&kp AT			&kp HASH		&kp DOLLAR		&kp PRCNT		&kp LS(RIGHT)								kp LS(RIGHT)		&kp CARET		&kp AMPS		&kp ASTERISK		&kp LPAR		&kp RPAR		&kp UNDER
-&kp LS(TAB)		&ht_tp LS(LC(Q)) LS(Q)	&ht_tp LS(LC(W)) LS(W)	&ht_tp LS(LC(E)) LS(E)	&ht_tp LS(LC(R)) LS(R)	&ht_tp LS(LC(T)) LS(T)	&kp LS(UP)		  						kp LS(UP)		&ht_tp LS(LC(Y)) LS(Y)	&ht_tp LS(LC(U)) LS(U)	&ht_tp LS(LC(I)) LS(I)	&ht_tp LS(LC(O)) LS(O)	&ht_tp LS(LC(P)) LS(P)	&kp PLUS
-&kp CAPS		&ht_tp LS(LC(A)) LS(A)	&ht_tp LS(LC(S)) LS(S)	&ht_tp LS(LC(D)) LS(D)	&ht_tp LS(LC(F)) LS(F)	&ht_tp LS(LC(G)) LS(G)	&none									none			&ht_tp LS(LC(H)) LS(H)	&ht_tp LS(LC(J)) LS(J)	&ht_tp LS(LC(K)) LS(K)	&ht_tp LS(LC(L)) LS(L)	&kp COLON		&kp DQT
-&kp LS(LCTRL)		&ht_tp LS(LC(Z)) LS(Z)	&ht_tp LS(LC(X)) LS(X)	&ht_tp LS(LC(C)) LS(C)	&ht_tp LS(LC(V)) LS(V)	&ht_tp LS(LC(B)) LS(B)	&kp LS(LEFT)		&trans			&trans			kp LS(LEFT)		&ht_tp LS(LC(N)) LS(N)	&ht_tp LS(LC(M)) LS(M)	&kp LT			&kp GT			&kp QMARK		&kp PIPE
-&kp LS(LGUI)		&kp LS(RCTRL)		&kp LS(LALT)		&kp ENTER		&kp BSPC		&kp SPACE		&kp LS(DOWN)		&trans			&trans			kp LS(DOWN)		&kp SPACE		&kp DEL			&kp ESC			&kp LS(RALT)		&kp LS(RCTRL)		&kp LS(RGUI)
+&kp TILDE		&kp EXCL		&kp AT			&kp HASH		&kp DOLLAR		&kp PRCNT		&kp LS(RIGHT)								&kp LS(RIGHT)		&kp CARET		&kp AMPS		&kp ASTERISK		&kp LPAR		&kp RPAR		&kp UNDER
+&kp LS(TAB)		&ht_tp LS(LC(Q)) LS(Q)	&ht_tp LS(LC(W)) LS(W)	&ht_tp LS(LC(E)) LS(E)	&ht_tp LS(LC(R)) LS(R)	&ht_tp LS(LC(T)) LS(T)	&kp LS(UP)		  						&kp LS(UP)		&ht_tp LS(LC(Y)) LS(Y)	&ht_tp LS(LC(U)) LS(U)	&ht_tp LS(LC(I)) LS(I)	&ht_tp LS(LC(O)) LS(O)	&ht_tp LS(LC(P)) LS(P)	&kp PLUS
+&kp CAPS		&ht_tp LS(LC(A)) LS(A)	&ht_tp LS(LC(S)) LS(S)	&ht_tp LS(LC(D)) LS(D)	&ht_tp LS(LC(F)) LS(F)	&ht_tp LS(LC(G)) LS(G)	&none									&none			&ht_tp LS(LC(H)) LS(H)	&ht_tp LS(LC(J)) LS(J)	&ht_tp LS(LC(K)) LS(K)	&ht_tp LS(LC(L)) LS(L)	&kp COLON		&kp DQT
+&kp LS(LCTRL)		&ht_tp LS(LC(Z)) LS(Z)	&ht_tp LS(LC(X)) LS(X)	&ht_tp LS(LC(C)) LS(C)	&ht_tp LS(LC(V)) LS(V)	&ht_tp LS(LC(B)) LS(B)	&kp LS(LEFT)		&trans			&trans			&kp LS(LEFT)		&ht_tp LS(LC(N)) LS(N)	&ht_tp LS(LC(M)) LS(M)	&kp LT			&kp GT			&kp QMARK		&kp PIPE
+&kp LS(LGUI)		&kp LS(RCTRL)		&kp LS(LALT)		&kp ENTER		&kp BSPC		&kp SPACE		&kp LS(DOWN)		&trans			&trans			&kp LS(DOWN)		&kp SPACE		&kp DEL			&kp ESC			&kp LS(RALT)		&kp LS(RCTRL)		&kp LS(RGUI)
 			>;
 		};
 
