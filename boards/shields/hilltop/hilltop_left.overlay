@@ -1,5 +1,4 @@
 #include "hilltop.dtsi"
-#include "split_inputs.dtsi"
 
 / {
     chosen {
