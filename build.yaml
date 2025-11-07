@@ -22,7 +22,7 @@ include:
   - board: seeeduino_xiao_ble
     shield: hilltop_dongle
   - board: seeeduino_xiao_ble
-    shield: hilltop_cirqueperiph
+    shield: hilltop_periph
   - board: nice_nano_v2
     shield: hilltop_left
   - board: nice_nano_v2

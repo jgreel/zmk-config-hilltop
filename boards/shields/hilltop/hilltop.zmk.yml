@@ -10,6 +10,6 @@ features:
   - pointer
 siblings:
   - hilltop_dongle
-  - hilltop_cirqueperiph
+  - hilltop_periph
   - hilltop_left
   - hilltop_right

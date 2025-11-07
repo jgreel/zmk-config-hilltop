@@ -10,13 +10,18 @@ manifest:
       url-base: https://github.com/urob
     - name: petejohanson
       url-base: https://github.com/petejohanson/
+    - name: AYM1607
+      url-base: https://github.com/AYM1607/
     # Additional modules containing boards/shields/custom code can be listed here as well
   projects:
     - name: zmk
       remote: zmkfirmware
       import: app/west.yml
-    - name: cirque-input-module
-      remote: petejohanson
+    # - name: cirque-input-module
+    #   remote: petejohanson
+    #   revision: main
+    - name: zmk-driver-azoteq-iqs5xx
+      remote: AYM1607
       revision: main
   self:
     path: config

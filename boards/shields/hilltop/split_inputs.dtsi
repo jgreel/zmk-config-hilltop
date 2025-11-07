@@ -3,21 +3,21 @@
         #address-cells = <1>;
         #size-cells = <0>;
 
-        glidepoint_split: glidepoint_split@0 {
+        trackpad_split: trackpad_split@0 {
             compatible = "zmk,input-split";
             reg = <0>;
         };
     };
 
-    glidepoint0_listener: glidepoint0_listener {
+    trackpad0_listener: trackpad0_listener {
         compatible = "zmk,input-listener";
         status = "disabled";
 
     };
 
-    glidepoint1_listener: glidepoint1_listener {
+    trackpad1_listener: trackpad1_listener {
         compatible = "zmk,input-listener";
         status = "disabled";
-        device = <&glidepoint_split>;
+        device = <&trackpad_split>;
     };
 };

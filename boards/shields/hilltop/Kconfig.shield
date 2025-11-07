@@ -2,8 +2,8 @@
 config SHIELD_HILLTOP_DONGLE
     def_bool $(shields_list_contains,hilltop_dongle)
 
-config SHIELD_HILLTOP_CIRQUEPERIPH
-    def_bool $(shields_list_contains,hilltop_cirqueperiph)
+config SHIELD_HILLTOP_PERIPH
+    def_bool $(shields_list_contains,hilltop_periph)
 
 config SHIELD_HILLTOP_LEFT
     def_bool $(shields_list_contains,hilltop_left)
