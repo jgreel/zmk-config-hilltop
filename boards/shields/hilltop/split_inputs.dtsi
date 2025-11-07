@@ -1,3 +1,23 @@
+&zip_gestures {
+
+    // https://github.com/halfdane/zmk-input-gestures
+
+    // Activate gestures and change their configuration as you see fit.
+    // for details, see the section below that describes all gestures and
+    // their configuration options.
+
+    // This will create a mouseclick if your touch is short enough.
+    // if you're running in relative mode and don't use no-taps, this might
+    // result in duplicate taps
+
+    //tap-detection;
+    //tap-timout-ms=<120>;
+
+    inertial-cursor;
+    inertial-cursor-velocity-threshold-ms=<20>;
+    inertial-cursor-decay-percent=<98>;
+};
+
 / {
     split_inputs {
         #address-cells = <1>;
