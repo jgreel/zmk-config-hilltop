@@ -18,11 +18,13 @@
     //tap-timout-ms=<120>;
 
     inertial-cursor;
-    inertial-cursor-velocity-threshold=<5>;
+    inertial-cursor-velocity-threshold=<2>;
     inertial-cursor-decay-percent=<98>;
 };
 
 &pointer_accel {
+    // https://github.com/oleksandrmaslov/zmk-pointing-acceleration
+    
     input-type = <INPUT_EV_REL>;  // For relative input devices
     track-remainders;             // Accumulate fractional movements
     min-factor = <800>;          // 0.8x at very slow speeds
