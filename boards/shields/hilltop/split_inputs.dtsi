@@ -18,8 +18,8 @@
     //tap-timout-ms=<120>;
 
     inertial-cursor;
-    inertial-cursor-velocity-threshold=<2>;
-    inertial-cursor-decay-percent=<98>;
+    inertial-cursor-velocity-threshold=<1>;
+    inertial-cursor-decay-percent=<90>;
 };
 
 &pointer_accel {
@@ -27,10 +27,10 @@
     
     input-type = <INPUT_EV_REL>;  // For relative input devices
     track-remainders;             // Accumulate fractional movements
-    min-factor = <800>;          // 0.8x at very slow speeds
-    max-factor = <3000>;         // 3.0x at fast speeds
-    speed-threshold = <1200>;     // 1200 counts/sec for 1x
-    speed-max = <6000>;          // 6000 counts/sec for max accel
+    min-factor = <1000>;          // 0.8x at very slow speeds
+    max-factor = <5000>;         // 3.0x at fast speeds
+    speed-threshold = <200>;     // counts/sec for 1x
+    speed-max = <5000>;          // 6000 counts/sec for max accel
     acceleration-exponent = <2>;  // Quadratic acceleration curve
 };
 
