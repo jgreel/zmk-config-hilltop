@@ -12,6 +12,8 @@ manifest:
       url-base: https://github.com/petejohanson/
     - name: halfdane
       url-base: https://github.com/halfdane/
+    - name: oleksandrmaslov
+      url-base: https://github.com/oleksandrmaslov     
     # Additional modules containing boards/shields/custom code can be listed here as well
   projects:
     - name: zmk
@@ -30,5 +32,8 @@ manifest:
     #- name: cirque-input-module
     #  remote: halfdane
     #  revision: absolute_mode
+    - name: zmk-pointing-acceleration
+      remote: oleksandrmaslov
+      revision: main
   self:
     path: config

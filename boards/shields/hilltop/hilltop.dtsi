@@ -1,8 +1,5 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include <physical_layouts.dtsi>
-#include <input/processors.dtsi>
-#include <dt-bindings/zmk/input_transform.h>
-#include <behaviors/input_processor_gestures.dtsi>
 
 / {
 	chosen {

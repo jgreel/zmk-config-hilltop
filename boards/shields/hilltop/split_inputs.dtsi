@@ -1,3 +1,8 @@
+#include <input/processors.dtsi>
+#include <dt-bindings/zmk/input_transform.h>
+#include <behaviors/input_gestures_accel.dtsi>
+#include <behaviors/input_processor_gestures.dtsi>
+
 &zip_gestures {
     // https://github.com/halfdane/zmk-input-gestures
 
@@ -13,8 +18,18 @@
     //tap-timout-ms=<120>;
 
     inertial-cursor;
-    inertial-cursor-velocity-threshold=<20>;
+    inertial-cursor-velocity-threshold=<5>>;
     inertial-cursor-decay-percent=<98>;
+};
+
+&pointer_accel {
+    input-type = <INPUT_EV_REL>;  // For relative input devices
+    track-remainders;             // Accumulate fractional movements
+    min-factor = <800>;          // 0.8x at very slow speeds
+    max-factor = <3000>;         // 3.0x at fast speeds
+    speed-threshold = <1200>;     // 1200 counts/sec for 1x
+    speed-max = <6000>;          // 6000 counts/sec for max accel
+    acceleration-exponent = <2>;  // Quadratic acceleration curve
 };
 
 / {
