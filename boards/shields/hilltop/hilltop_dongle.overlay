@@ -39,26 +39,26 @@
 &glidepoint0_listener {
     status = "okay";
     device = <&glidepoint0>;
-    input-processors
-		= <&zip_temp_layer 5 100000>
-        , <&pointer_accel>
-        , <&zip_gestures>
+    input-processors = <
+		&zip_temp_layer 5 100000
+        &pointer_accel
+        &zip_gestures
 		/*
         , <&zip_xy_scaler 2 1> // multiplier / divisor scaling
 		, <&zip_xy_transform> (INPUT_TRANSFORM_X_INVERT)
         */
-	;
+	>;
 };
 
 &glidepoint1_listener {
     status = "okay";
-    input-processors
-		= <&zip_temp_layer 5 100000>
-        , <&pointer_accel>
-        , <&zip_gestures>
+    input-processors = <
+		&zip_temp_layer 5 100000
+        &pointer_accel
+        &zip_gestures
 		/*
         , <&zip_xy_scaler 2 1> // multiplier / divisor scaling
 		, <&zip_xy_transform> (INPUT_TRANSFORM_X_INVERT)
         */
-	;
+	>;
 };
