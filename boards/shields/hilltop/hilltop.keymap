@@ -207,7 +207,7 @@
 &trans			&none			&none			&kp LG(TAB)		&none			&none			&kp UP									&kp UP			&none			&none			&kp LG(TAB)		&none			&none			&kp F12
 &trans			&mkp MB4		&mkp RCLK		&mkp MCLK		&mkp LCLK		&mkp MB5		&none									&none			&mkp MB4		&mkp LCLK		&mkp MCLK		&mkp RCLK		&mkp MB5		&kp RSHFT
 &trans			&scrllftctrlz		&scrldnctrlx		&scrlupctrlc		&scrlrtctrlv		&none			&kp LEFT		&trans			&trans			&kp LEFT		&none			&msc SCRL_LEFT		&msc SCRL_UP		&msc SCRL_DOWN		&msc SCRL_RIGHT		&kp LCTRL
-&trans			&trans			&trans			&trans			&trans			&trans			&kp DOWN		&trans			&trans			&kp DOWN		&trans			&trans			&trans			&trans			&trans			&trans
+&trans			&trans			&trans			&trans			&trans			&to ALPHA		&kp DOWN		&trans			&trans			&kp DOWN		&to ALPHA		&trans			&trans			&trans			&trans			&trans
 			>;
 		};
 	};

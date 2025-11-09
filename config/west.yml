@@ -10,6 +10,8 @@ manifest:
       url-base: https://github.com/urob
     - name: petejohanson
       url-base: https://github.com/petejohanson/
+    - name: halfdane
+      url-base: https://github.com/halfdane/
     # Additional modules containing boards/shields/custom code can be listed here as well
   projects:
     - name: zmk
@@ -18,5 +20,15 @@ manifest:
     - name: cirque-input-module
       remote: petejohanson
       revision: main
+    - name: zmk-input-gestures
+      remote: halfdane
+      revision: main
+    # Add these if you want to use absolute mode:
+    #- name: zmk-input-processors
+    #  remote: halfdane
+    #  revision: main
+    #- name: cirque-input-module
+    #  remote: halfdane
+    #  revision: absolute_mode
   self:
     path: config
