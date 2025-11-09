@@ -18,7 +18,7 @@
     //tap-timout-ms=<120>;
 
     inertial-cursor;
-    inertial-cursor-velocity-threshold=<5>>;
+    inertial-cursor-velocity-threshold=<5>;
     inertial-cursor-decay-percent=<98>;
 };
 
