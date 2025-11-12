@@ -44,7 +44,7 @@
     // Optional
         input-processors = <
         /*&zip_gestures*/
-        &zip_absolute_to_relative
+        /*&zip_absolute_to_relative*/
         &zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)
 		/*
         &zip_xy_scaler 2 1> // multiplier / divisor scaling
