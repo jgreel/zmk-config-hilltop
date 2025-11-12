@@ -19,8 +19,8 @@
     //tap-timout-ms=<120>;
 
     inertial-cursor;
-    inertial-cursor-velocity-threshold=<20>;
-    inertial-cursor-decay-percent=<90>;
+    inertial-cursor-velocity-threshold=<2>;
+    inertial-cursor-decay-percent=<30>;
 };
 
 &pointer_accel {
