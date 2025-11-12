@@ -2,6 +2,7 @@
 #include <dt-bindings/zmk/input_transform.h>
 #include <behaviors/input_gestures_accel.dtsi>
 #include <behaviors/input_processor_gestures.dtsi>
+#include <behaviors/input_processor_absolute_to_relative.dtsi>
 
 &zip_gestures {
     // https://github.com/halfdane/zmk-input-gestures
@@ -18,8 +19,8 @@
     //tap-timout-ms=<120>;
 
     inertial-cursor;
-    inertial-cursor-velocity-threshold=<1>;
-    inertial-cursor-decay-percent=<50>;
+    inertial-cursor-velocity-threshold=<20>;
+    inertial-cursor-decay-percent=<90>;
 };
 
 &pointer_accel {
