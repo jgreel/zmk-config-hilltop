@@ -43,7 +43,7 @@
     device = <&glidepoint1>;
     // Optional
         input-processors = <
-        /*&zip_gestures*/
+        &zip_gestures
         /*&zip_absolute_to_relative*/
         &zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)
 		/*
