@@ -41,9 +41,9 @@
     status = "okay";
     device = <&glidepoint1>;
     input-processors = <
-        &zip_gestures
+        /*&zip_gestures*/
         &zip_temp_layer 5 500
-        &zip_absolute_to_relative
+        /*&zip_absolute_to_relative*/
         /*&zip_xy_transform (INPUT_TRANSFORM_X_INVERT)*/
         &pointer_accel
     >;
