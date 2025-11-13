@@ -24,10 +24,10 @@
         dr-gpios = <&xiao_d 3 (GPIO_ACTIVE_HIGH)>;
         
         //default driver options
-        //sensitivity = "2x"; //1x, 2x, 3x, 4x
+        sensitivity = "2x"; //1x, 2x, 3x, 4x
         //rotate-90;
         //x-invert;
-        //y-invert;
+        y-invert;
         //sleep;
         //no-secondary-tap;
         //no-taps;
@@ -42,10 +42,11 @@
 &glidepoint_split {
     device = <&glidepoint1>;
     // Optional
-        input-processors = <
+        /*input-processors = <
         &zip_gestures
-        /*&zip_absolute_to_relative*/
+        &zip_absolute_to_relative
         &zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)
+        */
 		/*
         &zip_xy_scaler 2 1> // multiplier / divisor scaling
 		&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)
