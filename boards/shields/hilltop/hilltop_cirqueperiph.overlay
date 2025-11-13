@@ -37,19 +37,24 @@
     };
 };
 
+&glidepointtranslator_listener {
+    status = "okay";
+    device = <&glidepoint1>;
+    input-processors = <
+        &zip_gestures
+        &zip_temp_layer 5 500
+        &zip_absolute_to_relative
+        /*&zip_xy_transform (INPUT_TRANSFORM_X_INVERT)*/
+        &pointer_accel
+    >;
+};
+
 // Overrides for the input-split child node
 &glidepoint_split {
-    device = <&glidepoint1>;
+    device = <&glidepointtranslator_listener>;
     // Optional
-        input-processors = <
-            &zip_gestures
-            &zip_temp_layer 5 500
-            &zip_absolute_to_relative
-            /*&zip_xy_transform (INPUT_TRANSFORM_X_INVERT)*/
-            &pointer_accel
-	    	/*
+        /*input-processors = <
             &zip_xy_scaler 2 1> // multiplier / divisor scaling
 	    	&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)
-            */
-	    >;
+	    >;*/
 };

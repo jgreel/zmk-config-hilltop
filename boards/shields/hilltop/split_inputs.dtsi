@@ -57,4 +57,9 @@
         status = "disabled";
         device = <&glidepoint_split>;
     };
+
+    glidepointtranslator_listener: glidepointtranslator_listener {
+        compatible = "zmk,input-listener";
+        status = "disabled";
+    };
 };
