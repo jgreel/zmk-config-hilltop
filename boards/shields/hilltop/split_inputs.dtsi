@@ -19,25 +19,10 @@
 };
 
 / {
-    split_inputs {
-        #address-cells = <1>;
-        #size-cells = <0>;
-
-        trackpad_split: trackpad_split@0 {
-            compatible = "zmk,input-split";
-            reg = <0>;
-        };
-    };
-
     trackpad0_listener: trackpad0_listener {
         compatible = "zmk,input-listener";
         status = "disabled";
 
     };
 
-    trackpad1_listener: trackpad1_listener {
-        compatible = "zmk,input-listener";
-        status = "disabled";
-        device = <&trackpad_split>;
-    };
 };
